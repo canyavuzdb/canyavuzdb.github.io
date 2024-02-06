@@ -2,7 +2,7 @@ import React from 'react';
 import './App.css';
 
 function App() {
-  return <>Selam</>;
+  return <h1>ON PROGRESS...</h1>;
 }
 
 export default App;
