@@ -114,7 +114,7 @@ export const Contact = () => {
             />
             <Button type="submit">Send</Button>
             {success &&
-              "Your message has been sent. We'll get back to you soon :)"}
+              "Your message has been sent. I'll get back to you soon :)"}
             {/* {!success &&
               "Something went wrong. Please try again later :("} */}
           </Form>
