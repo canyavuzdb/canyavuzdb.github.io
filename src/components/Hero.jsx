@@ -117,7 +117,7 @@ export const Hero = () => {
         <Left>
           <Title>Mehmet Can Yavuz</Title>
           <WhatIDo>
-            <Line src="./assets/img/line.png" />
+            <Line src="static/images/line.png" />
             <Subtitle>What I Do</Subtitle>
           </WhatIDo>
           <Desc>
@@ -147,7 +147,7 @@ export const Hero = () => {
               </Sphere>
             </Suspense>
           </Canvas>
-          <Img src="./assets/img/8.png" />
+          <Img src="static/images/8.png" />
         </Right>
       </Container>
     </Section>
