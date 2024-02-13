@@ -72,7 +72,7 @@ const Right = styled.div`
   }
 `;
 
-const Contact = () => {
+export const Contact = () => {
   const ref = useRef();
   const [success, setSuccess] = useState(null);
 
@@ -104,7 +104,7 @@ const Contact = () => {
       <Container>
         <Left>
           <Form ref={ref} onSubmit={handleSubmit}>
-            <Title>Contact Us</Title>
+            <Title>Contact Me</Title>
             <Input placeholder="Name" name="name" />
             <Input placeholder="Email" name="email" />
             <TextArea
@@ -124,5 +124,3 @@ const Contact = () => {
     </Section>
   );
 };
-
-export default Contact;
