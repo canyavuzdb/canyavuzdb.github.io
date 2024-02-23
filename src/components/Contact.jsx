@@ -79,25 +79,18 @@ export const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        'service_mcy',
-        'template_t4wl67j',
-        ref.current,
-        'I1uoGXdFZAIVYJ2U2'
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          setSuccess(true);
-          e.target.reset();
-        },
-        (error) => {
-          console.log(error.text);
-          setSuccess(false);
-          e.target.reset();
-        }
-      );
+    emailjs.sendForm('', '', ref.current, '').then(
+      (result) => {
+        console.log(result.text);
+        setSuccess(true);
+        e.target.reset();
+      },
+      (error) => {
+        console.log(error.text);
+        setSuccess(false);
+        e.target.reset();
+      }
+    );
   };
   return (
     <Section>
