@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Contact } from './components/Contact';
+// import { Contact } from './components/Contact';
 import { Hero } from './components/Hero';
 import './App.css';
 
@@ -21,7 +21,7 @@ function App() {
   return (
     <Container>
       <Hero />
-      <Contact />
+      {/* <Contact /> */}
     </Container>
   );
 }
