@@ -9,6 +9,9 @@ export const metadata: Metadata = {
   title: "MCY | Personal Portfolio",
   description:
     "MCY is a full stack software developer with 1 years of real time experience.",
+    icons: {
+      icon: '/favicon.ico',
+    },
 };
 
 export default function RootLayout({
