@@ -2,17 +2,13 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/header";
-import SmoothCursor from "@/components/smooth-cursor";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "MCY | Personal Portfolio",
   description:
-    "MCY is a full stack software developer with 1 years of real time experience.",
-    icons: {
-      icon: '/favicon.ico',
-    },
+    "MCY is a full stack software developer with 1 years of real time experience."
 };
 
 export default function RootLayout({
@@ -29,7 +25,6 @@ export default function RootLayout({
         <div className="bg-[#d0d0d0] absolute top-[-1rem] -z-10 left-[-35rem] h-[31.25rem] w-[50rem] rounded-full blur-[20rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem] "></div>
         <Header />
         {children}
-        <SmoothCursor />
       </body>
     </html>
   );
