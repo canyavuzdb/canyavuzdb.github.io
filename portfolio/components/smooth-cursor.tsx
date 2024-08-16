@@ -65,7 +65,7 @@ const SmoothCursor = () => {
           width: '20px',
           height: '20px',
           borderRadius: '50%',
-          backgroundImage: isHoveringLink ? 'url(/hover-photo.jpg)' : 'url(/photo.jpg)',
+          backgroundImage: isHoveringLink ? 'url(/hover-photo.jpg)' : 'url(/cursor-photo.jpg)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           pointerEvents: 'none',
@@ -76,7 +76,7 @@ const SmoothCursor = () => {
         animate={{
           x: mousePosition.x - 10,
           y: mousePosition.y - 10,
-          scale: isHoveringLink ? 3 : 1.5,
+          scale: isHoveringLink ? 3 : 2,
         }}
         transition={{
           type: 'spring',
