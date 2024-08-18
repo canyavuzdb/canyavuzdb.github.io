@@ -1,17 +1,34 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 "use client";
 
 import Image from "next/image";
-import React from "react";
+import React, { useEffect } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { HiEye } from "react-icons/hi";
+import { useInView } from "react-intersection-observer";
+import { useActiveLinkContext } from "@/context/active-link-context";
 
 export default function intro() {
+  const { ref, inView } = useInView({
+    threshold: 0.5,
+  });
+  const { setActiveLink } = useActiveLinkContext();
+  useEffect(() => {
+    if (inView) {
+      setActiveLink("Home");
+    }
+  }, [inView, setActiveLink]);
+
   return (
-    <section className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]">
+    <section
+      ref={ref}
+      id="home"
+      className="mb-28 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
+    >
       <div className="flex items-center justify-center">
         <div>
           <motion.div
@@ -45,14 +62,17 @@ export default function intro() {
           delay: 0.3,
         }}
       >
-        <span className="font-bold">
-          Hello, It's{" "}
-          <span className="font-bold text-gray-900">Can Yavuz </span>
+        Hello, my name is{" "}
+        <span className="font-bold text-gray-700">Can Yavuz</span>. I am a
+        dedicated <span className="font-bold">full-stack developer</span> with{" "}
+        <span className="font-bold">1+ years</span> of hands-on experience in
+        building <span className="italic">websites and applications</span>. I am
+        passionate about creating high-quality digital products and{" "}
+        <span className="underline">
+          continuously strive to enhance my skills and expertise
         </span>
-        here. I'm a <span className="font-bold">full-stack developer</span> with{" "}
-        <span className="font-bold">a year</span> of experience. I enjoy
-        building <span className="italic">sites & apps</span>. My focus is{" "}
-        <span className="underline">to be better at all</span>.
+        . My focus is on delivering impactful solutions while constantly
+        improving as a developer.
       </motion.h1>
 
       <motion.div
