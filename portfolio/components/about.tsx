@@ -1,12 +1,25 @@
 "use client";
 
-import React from "react";
+import React, { useEffect } from "react";
 import SectionHeading from "./section-heading";
 import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import { useActiveLinkContext } from "@/context/active-link-context";
 
 export default function About() {
+  const { ref, inView } = useInView({
+    threshold: 0.75,
+  });
+  const { setActiveLink } = useActiveLinkContext();
+  useEffect(() => {
+    if (inView) {
+      setActiveLink("About");
+    }
+  }, [inView, setActiveLink]);
+
   return (
     <motion.section
+      ref={ref}
       className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28"
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
@@ -15,34 +28,40 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-10">
-        Born and raised in Istanbul and introduced to technology with the
-        computer brought home by his father when he was 10 years old, from that
-        day to this day, he has been a young man who knows the{" "}
-        <span className="font-medium">responsibilities of technology</span>, the
-        passion for{" "}
-        <span className="italic">
-          solving problems by researching on forums
-        </span>{" "}
-        on the internet on his own, and the responsibilities of continuous
-        learning and adaptation, and always fulfills his hobby rather than just
-        a job without losing his deep curiosity and stepped into the{" "}
-        <span className="font-medium">software development sector</span>. Taking
-        his pleasure of problem solving to the next level, he successfully
-        completed his education by studying{" "}
-        <span className="font-medium">software engineering</span> at the
-        university and continues to develop projects with{" "}
-        <span className="font-medium">.Net and React/Next.js</span>. And
-        currently looking for a{" "}
-        <span className="font-medium">full-time position</span> as a software
-        developer.
+        Born and raised in Istanbul, my journey into the world of technology
+        began when I was 10, thanks to a computer my father brought home. This
+        early introduction sparked a lifelong passion for technology, fueling a
+        relentless curiosity and a drive to solve problems independently through
+        online research and community forums. I've always embraced the{" "}
+        <span className="font-medium">
+          responsibilities that come with technology
+        </span>
+        , understanding that{" "}
+        <span className="font-medium">continuous learning and adaptation</span>{" "}
+        are essential to staying at the forefront of the field.
       </p>
-
-      <p>
-        <span className="italic">When I'm not coding</span>, I enjoy playing
-        video games, watching movies, and playing basketball. I also enjoy{" "}
-        <span className="font-medium">learning new things</span>. I am currently
-        learning about <span className="font-medium">art</span>. I'm also
-        learning how to play the piano.
+      <p className="mb-10">
+        My passion for problem-solving led me to pursue a degree in{" "}
+        <span className="font-medium">Software Engineering</span>, where I
+        successfully honed my skills and deepened my knowledge. Since then, I've
+        been developing projects using{" "}
+        <span className="font-medium">.NET and React/Next.js</span>, driven by
+        the same curiosity and enthusiasm that first drew me to this field. For
+        me, software development isn't just a profession—it's a hobby that I
+        find deeply fulfilling.
+      </p>
+      <p className="mb-10">
+        I'm now seeking a{" "}
+        <span className="font-medium">full-time position</span> as a software
+        developer, where I can apply my skills, contribute to innovative
+        projects, and continue to grow in an environment that values continuous
+        learning and technical excellence.
+      </p>
+      <p className="mb-10">
+        When I'm not coding, I enjoy immersing myself in video games, watching
+        movies, and playing basketball. I'm also passionate about learning new
+        things; currently, I'm exploring the world of art and learning to play
+        the piano.
       </p>
     </motion.section>
   );
