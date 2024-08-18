@@ -1,11 +1,15 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { links } from "@/lib/data";
 import Link from "next/link";
+import clsx from "clsx";
+import { useActiveLinkContext } from "@/context/active-link-context";
 
 export default function Header() {
+  const { activeLink, setActiveLink } = useActiveLinkContext();
+
   return (
     <header className="z-[999] relative">
       <motion.div
@@ -29,11 +33,24 @@ export default function Header() {
               }}
             >
               <Link
-                className="flex w-full items-center justify-center px-3 py-3 hover:text-gray-600 transition"
+                className={clsx(
+                  "flex w-full items-center justify-center px-3 py-3 hover:text-gray-600 transition",
+                  {
+                    "text-gray-500": activeLink === link.name,
+                  }
+                )}
                 href={link.hash}
+                onClick={() => setActiveLink(link.name)}
               >
                 {link.icon && <link.icon className="mr-1" />}
                 {link.name}
+                {link.name == activeLink && (
+                  <motion.span
+                    className="bg-gray-900 rounded-full absolute inset-0 -z-10 opacity-[0.4]"
+                    layoutId="activeLink"
+                    transition={{ type: "spring", stiffness: 380, damping: 30 }}
+                  ></motion.span>
+                )}
               </Link>
             </motion.li>
           ))}
