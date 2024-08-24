@@ -16,12 +16,12 @@ export default function intro() {
   const { ref, inView } = useInView({
     threshold: 0.5,
   });
-  const { setActiveLink } = useActiveLinkContext();
+  const { setActiveLink, LastTimeClick } = useActiveLinkContext();
   useEffect(() => {
-    if (inView) {
+    if (inView && Date.now() - LastTimeClick > 1000) {
       setActiveLink("Home");
     }
-  }, [inView, setActiveLink]);
+  }, [inView, setActiveLink, LastTimeClick]);
 
   return (
     <section

@@ -10,12 +10,12 @@ export default function About() {
   const { ref, inView } = useInView({
     threshold: 0.75,
   });
-  const { setActiveLink } = useActiveLinkContext();
+  const { setActiveLink, LastTimeClick } = useActiveLinkContext();
   useEffect(() => {
-    if (inView) {
+    if (inView && Date.now() - LastTimeClick > 1000) {
       setActiveLink("About");
     }
-  }, [inView, setActiveLink]);
+  }, [inView, setActiveLink, LastTimeClick]);
 
   return (
     <motion.section

@@ -8,7 +8,7 @@ import clsx from "clsx";
 import { useActiveLinkContext } from "@/context/active-link-context";
 
 export default function Header() {
-  const { activeLink, setActiveLink } = useActiveLinkContext();
+  const { activeLink, setActiveLink, setLastTimeClick } = useActiveLinkContext();
 
   return (
     <header className="z-[999] relative">
@@ -40,7 +40,10 @@ export default function Header() {
                   }
                 )}
                 href={link.hash}
-                onClick={() => setActiveLink(link.name)}
+                onClick={() => {
+                  setActiveLink(link.name);
+                  setLastTimeClick(Date.now());
+                }}
               >
                 {link.icon && <link.icon className="mr-1" />}
                 {link.name}

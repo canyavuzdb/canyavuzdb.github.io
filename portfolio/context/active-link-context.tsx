@@ -11,16 +11,21 @@ type ActiveLinkContextProviderProps = {
 type ActiveLinkContextType = {
     activeLink: SectionLink;
     setActiveLink: React.Dispatch<React.SetStateAction<SectionLink>>;
+    LastTimeClick:number;
+    setLastTimeClick:React.Dispatch<React.SetStateAction<number>>;
   };
   export const ActiveLinkContext =
   createContext<ActiveLinkContextType | null>(null);
 
 export default function ActiveLinkContextProvider({children}: ActiveLinkContextProviderProps) {
     const [activeLink, setActiveLink] = useState<SectionLink>("Home");
+    const [LastTimeClick, setLastTimeClick]=useState(0);
   return <ActiveLinkContext.Provider value={
     {
         activeLink: activeLink,
-        setActiveLink: setActiveLink
+        setActiveLink: setActiveLink,
+        LastTimeClick:LastTimeClick,
+        setLastTimeClick:setLastTimeClick 
     }
   }>{children}</ActiveLinkContext.Provider>;
 }
