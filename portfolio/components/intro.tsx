@@ -11,17 +11,10 @@ import { FaGithubSquare } from "react-icons/fa";
 import { HiEye } from "react-icons/hi";
 import { useInView } from "react-intersection-observer";
 import { useActiveLinkContext } from "@/context/active-link-context";
+import { useSectionInView } from "@/lib/hooks";
 
 export default function intro() {
-  const { ref, inView } = useInView({
-    threshold: 0.5,
-  });
-  const { setActiveLink, LastTimeClick } = useActiveLinkContext();
-  useEffect(() => {
-    if (inView && Date.now() - LastTimeClick > 1000) {
-      setActiveLink("Home");
-    }
-  }, [inView, setActiveLink, LastTimeClick]);
+  const { ref } = useSectionInView("Home");
 
   return (
     <section

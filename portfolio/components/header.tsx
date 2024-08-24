@@ -8,7 +8,8 @@ import clsx from "clsx";
 import { useActiveLinkContext } from "@/context/active-link-context";
 
 export default function Header() {
-  const { activeLink, setActiveLink, setLastTimeClick } = useActiveLinkContext();
+  const { activeLink, setActiveLink, setLastTimeClick } =
+    useActiveLinkContext();
 
   return (
     <header className="z-[999] relative">

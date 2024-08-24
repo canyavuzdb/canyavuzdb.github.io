@@ -1,9 +1,8 @@
 "use client";
 
+import type { SectionLink } from "@/lib/types";
 import React,{useState, createContext, useContext} from "react";
-import {links} from "@/lib/data";
 
-type SectionLink = typeof links[number]["name"];
 
 type ActiveLinkContextProviderProps = {
     children: React.ReactNode;
