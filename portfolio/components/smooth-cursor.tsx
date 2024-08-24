@@ -4,7 +4,7 @@ import React, { useState, useEffect, useCallback } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const SmoothCursor = () => {
-  const [mousePosition, setMousePosition] = useState({ x: 50, y: 50 });
+  const [mousePosition, setMousePosition] = useState({ x: 25, y: 25 });
   const [isHoveringLink, setIsHoveringLink] = useState(false);
   const [isMoving, setIsMoving] = useState(false);
   const [hoverMessage, setHoverMessage] = useState("AAaaA!! headache");
