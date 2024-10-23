@@ -50,7 +50,7 @@ export const projectsData = [
     title: "Natural Jam & Marmalade Store",
     description:
       "A startup project currently underway, a B2B project, aims to list more than 40 products to users.",
-    tags: ["Docker", ".Net", "Microservice", "RabbitMq", "PostgreSQL",],
+    tags: ["Docker", ".Net", "Microservice", "RabbitMq", "PostgreSQL"],
     imageUrl: jamImg,
   },
   {
@@ -60,4 +60,22 @@ export const projectsData = [
     tags: ["React", "Next.js", "Sql", "Tailwind", "Prisma"],
     imageUrl: webautoImg,
   },
+] as const;
+
+export const skillsData = [
+  "React",
+  "Next.js",
+  "Tailwind",
+  "Typescript",
+  "Prisma",
+  "Git",
+  "Docker",
+  "OOP",
+  "PostgreSQL",
+  ".NET",
+  "RabbitMQ",
+  "CQRS",
+  "DDD",
+  "SharedKernel",
+  "CI/CD",
 ] as const;
