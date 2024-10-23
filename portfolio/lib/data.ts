@@ -1,3 +1,4 @@
+import React from "react";
 import { IconType } from "react-icons";
 import {
   AiOutlineHome,
@@ -7,6 +8,7 @@ import {
   AiOutlineHistory,
   AiOutlineMessage,
 } from "react-icons/ai";
+import { CgWorkAlt } from "react-icons/cg";
 import jamImg from "@/public/jam.png";
 import webautoImg from "@/public/webautomation.png";
 
@@ -78,4 +80,23 @@ export const skillsData = [
   "DDD",
   "SharedKernel",
   "CI/CD",
+] as const;
+
+export const experiencesData = [
+  {
+    title: "Full-Stack Developer, Mims Yazılım A.Ş",
+    location: "Istanbul",
+    description:
+      "I worked in this job for 4 months when I was in my last year at university and I gained full-stack experience by taking part in a full-time real project.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2023",
+  },
+  {
+    title: "Full-Stack Developer, Secube Teknoloji AR-GE A.Ş. ",
+    location: "Istanbul",
+    description:
+      "As a 3rd year university student, I worked in this job for 5 months and gained full-stack experience by taking part in a full-time real project.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2022",
+  }
 ] as const;
