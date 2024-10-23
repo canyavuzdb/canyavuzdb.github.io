@@ -3,6 +3,7 @@ import SectionDivider from "@/components/section-divider";
 import About from "@/components/about";
 import SmoothCursor from "@/components/smooth-cursor";
 import Projects from "@/components/projects";
+import Skills from "@/components/skills";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
     <SectionDivider />
     <About />
     <Projects />
+    <Skills/>
     <SmoothCursor />
     </main>
   );
