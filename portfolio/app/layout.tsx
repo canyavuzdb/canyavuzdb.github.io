@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/header";
 import ActiveLinkContextProvider from "@/context/active-link-context";
+import Footer from "@/components/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -27,6 +28,7 @@ export default function RootLayout({
         <ActiveLinkContextProvider>
           <Header />
           {children}
+          <Footer />
         </ActiveLinkContextProvider>
       </body>
     </html>
