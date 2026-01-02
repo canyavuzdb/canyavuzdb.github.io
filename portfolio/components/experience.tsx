@@ -2,52 +2,23 @@
 
 import React from "react";
 import SectionHeading from "./section-heading";
-import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from "react-vertical-timeline-component";
-import "react-vertical-timeline-component/style.min.css";
 import { experiencesData } from "@/lib/data";
-import { useSectionInView } from "@/lib/hooks";
-
 export default function Experience() {
-  const { ref } = useSectionInView("Experience");
-
   return (
-    <section id="experience" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40">
-      <SectionHeading>My experiences</SectionHeading>
-      <VerticalTimeline lineColor="#303947">
+    <section id="experience" className="scroll-mt-28 w-full max-w-[45rem]">
+      <SectionHeading>Experience</SectionHeading>
+      <div className="flex flex-col gap-10">
         {experiencesData.map((item, index) => (
-          <React.Fragment key={index}>
-            <VerticalTimelineElement
-              visible={true}
-              contentStyle={{
-                background: "#303947",
-                boxShadow: "none",
-                border: "1px solid rgba(0, 0, 0, 0.05)",
-                textAlign: "left",
-                padding: "1.5rem 3rem", 
-              }}
-              contentArrowStyle={{
-                borderRight: "0.4rem solid #303947",
-              }}
-              date={item.date}
-              dateClassName="text-gray-400 ml-3 mr-3"
-              icon={item.icon}
-              iconStyle={{
-                background: "#303947",
-                fontSize: "1.5rem",
-              }}
-            >
-              <h3 className="font-semibold capitalize">{item.title}</h3>
-              <p className="font-normal !mt-1 text-gray-300">{item.location}</p>
-              <p className="!mt-2 !font-normal text-gray-400">
+          <div key={index} className="flex flex-col border-l-2 border-white/10 pl-6 relative">
+             <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-black border-2 border-white/50"></div>
+             <h3 className="font-semibold capitalize text-lg text-white tracking-wide">{item.title}</h3>
+             <span className="font-mono text-xs text-gray-500 mb-2 mt-1">{item.location} | {item.date}</span>
+             <p className="font-light text-gray-400 text-sm leading-relaxed mt-2 text-justify">
                 {item.description}
-              </p>
-            </VerticalTimelineElement>
-          </React.Fragment>
+             </p>
+          </div>
         ))}
-      </VerticalTimeline>
+      </div>
     </section>
   );
 }
