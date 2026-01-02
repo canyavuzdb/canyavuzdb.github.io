@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import Link from "next/link";
 import Header from "@/components/header";
 import ActiveLinkContextProvider from "@/context/active-link-context";
-import Footer from "@/components/footer";
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,14 +22,16 @@ export default function RootLayout({
   return (
     <html lang="en" className="!scroll-smooth">
       <body
-        className={`${inter.className} dark:bg-gray-900 dark:text-gray-50  relative pt-28 sm:pt-36`}
+        className={`${inter.className} text-white relative h-screen w-full overflow-hidden flex flex-col items-center justify-center`}
       >
-        <div className="bg-[#ffd6d6] absolute top-[-6rem] -z-10 right-[11rem] h-[31.25rem] w-[31.25rem] rounded-full blur-[20rem] sm:w-[68.75rem] "></div>
-        <div className="bg-[#d0d0d0] absolute top-[-1rem] -z-10 left-[-35rem] h-[31.25rem] w-[50rem] rounded-full blur-[20rem] sm:w-[68.75rem] md:left-[-33rem] lg:left-[-28rem] xl:left-[-15rem] 2xl:left-[-5rem] "></div>
         <ActiveLinkContextProvider>
-          <Header />
-          {children}
-          <Footer />
+          <div className="geometric-shape"></div>
+          <div className="relative w-[50rem] h-full flex flex-col justify-center z-10">
+            <div className="absolute right-[100%] top-0 h-full flex items-center pr-6">
+                <Header />
+            </div>
+            {children}
+          </div>
         </ActiveLinkContextProvider>
       </body>
     </html>
