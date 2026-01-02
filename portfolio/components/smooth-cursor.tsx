@@ -6,6 +6,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 const SmoothCursor = () => {
   const [mousePosition, setMousePosition] = useState({ x: 25, y: 25 });
   const [isHoveringLink, setIsHoveringLink] = useState(false);
+  const [isTransparent, setIsTransparent] = useState(false);
   const [isMoving, setIsMoving] = useState(false);
   const [hoverMessage, setHoverMessage] = useState("AAaaA!! headache");
 
@@ -33,13 +34,22 @@ const SmoothCursor = () => {
       setHoverMessage("AAaaA!! headache");
     };
 
+    const handleMouseEnterTransparent = () => setIsTransparent(true);
+    const handleMouseLeaveTransparent = () => setIsTransparent(false);
+
     window.addEventListener('mousemove', handleMouseMove);
     document.body.style.cursor = 'none';
 
-    const interactiveElements = document.querySelectorAll('a, button');
+    const interactiveElements = document.querySelectorAll('[data-cursor~="hover"]');
     interactiveElements.forEach(element => {
       element.addEventListener('mouseenter', handleMouseEnterLink as EventListener);
       element.addEventListener('mouseleave', handleMouseLeaveLink as EventListener);
+    });
+
+    const transparentElements = document.querySelectorAll('[data-cursor~="transparent"]');
+    transparentElements.forEach(element => {
+      element.addEventListener('mouseenter', handleMouseEnterTransparent as EventListener);
+      element.addEventListener('mouseleave', handleMouseLeaveTransparent as EventListener);
     });
 
     return () => {
@@ -50,6 +60,11 @@ const SmoothCursor = () => {
       interactiveElements.forEach(element => {
         element.removeEventListener('mouseenter', handleMouseEnterLink as EventListener);
         element.removeEventListener('mouseleave', handleMouseLeaveLink as EventListener);
+      });
+
+      transparentElements.forEach(element => {
+        element.removeEventListener('mouseenter', handleMouseEnterTransparent as EventListener);
+        element.removeEventListener('mouseleave', handleMouseLeaveTransparent as EventListener);
       });
     };
   }, [updateMousePosition]);
@@ -72,6 +87,7 @@ const SmoothCursor = () => {
           zIndex: 9999,
           transform: 'translate3d(0, 0, 0)',
           willChange: 'transform',
+          opacity: isTransparent ? 0.3 : 1,
         }}
         animate={{
           x: mousePosition.x - 10,
@@ -85,7 +101,7 @@ const SmoothCursor = () => {
         }}
       />
       <AnimatePresence>
-        {isMoving && (
+        {isMoving && !isTransparent && (
           <motion.div
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
