@@ -1,62 +1,137 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { links } from "@/lib/data";
-import Link from "next/link";
 import clsx from "clsx";
 import { useActiveLinkContext } from "@/context/active-link-context";
 
-export default function Header() {
-  const { activeLink, setActiveLink, setLastTimeClick } =
-    useActiveLinkContext();
+const CHARS = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+type ScrambleLinkProps = {
+  text: string;
+  isActive: boolean;
+  onClick: () => void;
+};
+
+const ScrambleLink = ({ text, isActive, onClick }: ScrambleLinkProps) => {
+  const [displayText, setDisplayText] = useState(text);
+  const intervalRef = useRef<NodeJS.Timeout | null>(null);
+
+  // Function to generate random string of same length
+  const getRandomString = (target: string) => {
+    return target
+      .split("")
+      .map(() => CHARS[Math.floor(Math.random() * CHARS.length)])
+      .join("");
+  };
+
+  const scramble = () => {
+    let iteration = 0;
+    clearInterval(intervalRef.current as NodeJS.Timeout);
+
+    intervalRef.current = setInterval(() => {
+      setDisplayText((prev) =>
+        prev
+          .split("")
+          .map((char, index) => {
+             // If this character is already "solved" (index < iteration), generate random for the rest
+             // Actually, for "all mixed" resting state, let's flip logic.
+             // But here we want to DECRYPT on hover.
+            if (index < iteration) {
+              return text[index];
+            }
+            return CHARS[Math.floor(Math.random() * CHARS.length)];
+          })
+          .join("")
+      );
+
+      if (iteration >= text.length) {
+        clearInterval(intervalRef.current as NodeJS.Timeout);
+        setDisplayText(text); // Ensure final fidelity
+      }
+
+      iteration += 1 / 3; // Speed of decryption
+    }, 30);
+  };
+
+  const setRandomState = () => {
+      clearInterval(intervalRef.current as NodeJS.Timeout);
+      // Just set it to a static random string to start/reset
+      setDisplayText(getRandomString(text));
+  };
+
+  // Initial mount: if not active, scramble it.
+  useEffect(() => {
+      if (!isActive) {
+          setRandomState();
+      } else {
+          setDisplayText(text);
+      }
+  }, [isActive]);
+
+  const handleMouseEnter = () => {
+    scramble();
+  };
+
+  const handleMouseLeave = () => {
+    if (!isActive) {
+      setRandomState();
+    }
+  };
 
   return (
-    <header className="z-[999] relative">
-      <motion.div
-        className="fixed top-0 left-1/2 h-[4.5rem] w-full rounded-none border bg-gray-950 border-black/40 bg-opacity-75 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] sm:top-6 sm:h-[3.25rem] sm:w-[42rem] sm:rounded-full"
-        initial={{ y: -100, x: "-50%", opacity: 0 }}
-        animate={{ y: 0, x: "-50%", opacity: 1 }}
-        transition={{
-          delay: 0.6,
-        }}
-      ></motion.div>
-      <nav className="flex fixed top-[0.15rem] left-1/2 h-12 -translate-x-1/2 py-2 sm:top-[1.7rem] sm:h-[initial] sm:py-0">
-        <ul className="flex w-[22rem] flex-wrap items-center justify-center gap-y-1 text-[0.9rem] font-medium text-gray-200 sm:w-[initial] sm:flex-nowrap sm:gap-5">
-          {links.map((link) => (
-            <motion.li
-              className="h-3/4 flex items-center justify-center relative"
-              key={link.hash}
-              initial={{ y: -100, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{
-                delay: 0.6,
-              }}
-            >
-              <Link
-                className={clsx(
-                  "flex w-full items-center justify-center px-3 py-3 hover:text-gray-600 transition",
-                  {
-                    "text-gray-500": activeLink === link.name,
-                  }
-                )}
-                href={link.hash}
-                onClick={() => {
-                  setActiveLink(link.name);
-                  setLastTimeClick(Date.now());
-                }}
+    <button
+      className={clsx(
+        "px-0 py-1 hover:text-white transition cursor-pointer italic tracking-normal font-mono uppercase text-center leading-none",
+        {
+          "text-white font-bold": isActive,
+          "text-gray-500 font-normal": !isActive
+        }
+      )}
+      style={{ writingMode: 'vertical-rl', textOrientation: 'upright' }}
+      onClick={onClick}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+      data-cursor="transparent"
+    >
+      {displayText}
+    </button>
+  );
+};
+
+export default function Header() {
+  const { activeLink, setActiveLink, setLastTimeClick } = useActiveLinkContext();
+
+  return (
+    <header className="z-[999] relative h-full flex items-center">
+      <nav className="flex flex-col gap-2 items-center">
+        <ul className="flex flex-col items-center justify-center text-[0.7rem] font-medium text-gray-500 gap-2">
+          {links.map((link, index) => (
+            <React.Fragment key={link.hash}>
+              <motion.li
+                className="relative flex items-center"
+                initial={{ x: -100, opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                transition={{ delay: index * 0.1 }}
               >
-                {link.icon && <link.icon className="mr-1" />}
-                {link.name}
-                {link.name == activeLink && (
-                  <motion.span
-                    className="bg-gray-900 rounded-full absolute inset-0 -z-10 opacity-[0.4]"
-                    layoutId="activeLink"
-                    transition={{ type: "spring", stiffness: 380, damping: 30 }}
-                  ></motion.span>
-                )}
-              </Link>
-            </motion.li>
+                <ScrambleLink 
+                    text={link.name} 
+                    isActive={activeLink === link.name}
+                    onClick={() => {
+                        setActiveLink(link.name);
+                        setLastTimeClick(Date.now());
+                    }}
+                />
+              </motion.li>
+              {index < links.length - 1 && (
+                <motion.span
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: 1 }}
+                    className="text-gray-800 h-[1px] w-3 bg-gray-800"
+                ></motion.span>
+              )}
+            </React.Fragment>
           ))}
         </ul>
       </nav>
