@@ -1,61 +1,32 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React from "react";
 import SectionHeading from "./section-heading";
 import { motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
-import { useActiveLinkContext } from "@/context/active-link-context";
-import { useSectionInView } from "@/lib/hooks";
-
 export default function About() {
-  const { ref } = useSectionInView("About");
-
   return (
-    <motion.section
-      ref={ref}
-      className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28"
-      initial={{ opacity: 0, y: 100 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ delay: 0.9 }}
+    <section
+      className="max-w-[45rem] text-center leading-8 scroll-mt-28"
       id="about"
     >
-      <SectionHeading>About me</SectionHeading>
-      <p className="mb-10">
-        Born and raised in Istanbul, my journey into the world of technology
-        began when I was 10, thanks to a computer my father brought home. This
-        early introduction sparked a lifelong passion for technology, fueling a
-        relentless curiosity and a drive to solve problems independently through
-        online research and community forums. I've always embraced the{" "}
-        <span className="font-medium">
-          responsibilities that come with technology
-        </span>
-        , understanding that{" "}
-        <span className="font-medium">continuous learning and adaptation</span>{" "}
-        are essential to staying at the forefront of the field.
-      </p>
-      <p className="mb-10">
-        My passion for problem-solving led me to pursue a degree in{" "}
-        <span className="font-medium">Software Engineering</span>, where I
-        successfully honed my skills and deepened my knowledge. Since then, I've
-        been developing projects using{" "}
-        <span className="font-medium">.NET and React/Next.js</span>, driven by
-        the same curiosity and enthusiasm that first drew me to this field. For
-        me, software development isn't just a profession—it's a hobby that I
-        find deeply fulfilling.
-      </p>
-      <p className="mb-10">
-        I'm now seeking a{" "}
-        <span className="font-medium">full-time position</span> as a software
-        developer, where I can apply my skills, contribute to innovative
-        projects, and continue to grow in an environment that values continuous
-        learning and technical excellence.
-      </p>
-      <p className="mb-10">
-        When I'm not coding, I enjoy immersing myself in video games, watching
-        movies, and playing basketball. I'm also passionate about learning new
-        things; currently, I'm exploring the world of art and learning to play
-        the piano.
-      </p>
-    </motion.section>
+      <SectionHeading>About Me</SectionHeading>
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
+        className="text-white/80 font-light text-lg space-y-6 text-justify"
+      >
+        <p>
+          When I was 5 years old, I had an Atari and played games. When I was 8, I had a computer and was constantly breaking it to understand how it worked. My story is very long, but the main point is that the time I spend with computers is a way of life for me.
+        </p>
+        <p>
+          Even when I wake up in the morning and eat my avocado toast, I'm actually coding. Whether I'm drinking my long-brewed American coffee at work or eating dinner when I get home in the evening, developing something is always the only real thing for me.
+        </p>
+        <p>
+          Alongside this, I have a social life, a sports life, and an obsession with healthy eating that I never neglect. The healthier I am psychologically, the healthier the products I develop are. If you've read this far, thank you for putting up with this strange text about me.
+        </p>
+      </motion.div>
+    </section>
   );
 }
