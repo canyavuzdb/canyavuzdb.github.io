@@ -23,7 +23,6 @@ export default function Home() {
                 animate={{ opacity: 1, scale: 1, filter: "blur(0px)" }}
                 exit={{ opacity: 0, scale: 1.02, filter: "blur(10px)" }}
                 transition={{ duration: 0.4, ease: "easeInOut" }}
-                transition={{ duration: 0.4, ease: "easeInOut" }}
                 className="w-full max-w-[50rem] flex-none h-full flex flex-col items-center justify-start md:justify-center p-4 pt-28 md:pt-4 overflow-y-auto text-center custom-scrollbar"
             >
                 {activeLink === "Home" && <Intro />}
