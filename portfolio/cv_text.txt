@@ -1,0 +1,2510 @@
+%PDF-1.4
+1 0 obj
+/Type /Catalog
+/Version /1.4
+/Pages 2 0 R
+/StructTreeRoot 3 0 R
+/MarkInfo 4 0 R
+/Lang (tr-TR)
+/ViewerPreferences 5 0 R
+endobj
+6 0 obj
+/Title (Mehmet Can Yavuz CV)
+/Creator (Canva)
+/Producer (Canva)
+/CreationDate (D:20260102204546+00'00')
+/ModDate (D:20260102204545+00'00')
+/Keywords (DAFBo1lO2p0,BAFBo-H-hoc,0)
+/Author (Mehmetcan Yavuz)
+endobj
+2 0 obj
+/Type /Pages
+/Kids [7 0 R 8 0 R]
+/Count 2
+endobj
+3 0 obj
+/Type /StructTreeRoot
+/K [9 0 R]
+/ParentTree 10 0 R
+/ParentTreeNextKey 34
+endobj
+4 0 obj
+/Marked true
+/Suspects false
+endobj
+5 0 obj
+/Type /ViewerPreferences
+/DisplayDocTitle true
+endobj
+7 0 obj
+/Type /Page
+/Resources <<
+/ProcSet [/PDF /Text /ImageB /ImageC /ImageI]
+/ExtGState 11 0 R
+/XObject <<
+/X16 12 0 R
+/MediaBox [0.0 7.8299813 595.5 850.07996]
+/Annots [13 0 R 14 0 R 15 0 R 16 0 R 17 0 R 18 0 R 19 0 R 20 0 R 21 0 R 22 0 R
+23 0 R 24 0 R 25 0 R]
+/Contents 26 0 R
+/StructParents 0
+/Tabs /S
+/Parent 2 0 R
+/BleedBox [0.0 7.8299813 595.5 850.07996]
+/TrimBox [0.0 7.8299813 595.5 850.07996]
+/CropBox [0.0 7.8299813 595.5 850.07996]
+/Rotate 0
+endobj
+8 0 obj
+/Type /Page
+/Resources <<
+/ProcSet [/PDF /Text /ImageB /ImageC /ImageI]
+/ExtGState 27 0 R
+/XObject <<
+/X11 28 0 R
+/MediaBox [0.0 7.8299813 595.5 850.07996]
+/Contents 29 0 R
+/StructParents 1
+/Tabs /S
+/Parent 2 0 R
+/BleedBox [0.0 7.8299813 595.5 850.07996]
+/TrimBox [0.0 7.8299813 595.5 850.07996]
+/CropBox [0.0 7.8299813 595.5 850.07996]
+/Rotate 0
+/Annots []
+endobj
+9 0 obj
+/Type /StructElem
+/S /Document
+/P 3 0 R
+/K [30 0 R 31 0 R]
+endobj
+10 0 obj
+/Limits [0 1]
+/Nums [0 [32 0 R 33 0 R 34 0 R 35 0 R 36 0 R 37 0 R 38 0 R 38 0 R 39 0 R 39 0 R
+40 0 R 41 0 R 41 0 R 42 0 R 42 0 R 43 0 R 44 0 R 45 0 R 46 0 R 47 0 R
+48 0 R 48 0 R 49 0 R 50 0 R 51 0 R 52 0 R 53 0 R 54 0 R 55 0 R 56 0 R
+57 0 R 57 0 R 58 0 R 59 0 R 60 0 R 61 0 R 62 0 R 63 0 R 64 0 R]
+ 1 [65 0 R 66 0 R 67 0 R 68 0 R 68 0 R 69 0 R 70 0 R 70 0 R 71 0 R 72 0 R
+72 0 R 73 0 R 74 0 R 75 0 R 76 0 R 77 0 R 78 0 R 79 0 R 80 0 R 81 0 R
+82 0 R 83 0 R 84 0 R 84 0 R 85 0 R 86 0 R 87 0 R 88 0 R 89 0 R 90 0 R
+91 0 R 92 0 R 93 0 R 94 0 R]
+endobj
+11 0 obj
+/G3 95 0 R
+endobj
+12 0 obj
+/Length 6103
+/Type /XObject
+/Subtype /Form
+/Resources <<
+/ProcSet [/PDF /Text /ImageB /ImageC /ImageI]
+/ExtGState 96 0 R
+/XObject <<
+/X4 97 0 R
+/X13 98 0 R
+/X14 99 0 R
+/X15 100 0 R
+/Font 101 0 R
+/BBox [0 0 2190 2905]
+/Group 102 0 R
+/Filter /FlateDecode
+stream
+,7q'
+3:Xw0A
+_?=}
+=uBiK?
+V;wAE
+:;MC
+!*uD
+;_[:lQ
+c3I+O
+9{::
+<4Gjv
+,N^i
+EaDS
+d}/jz
+2O2j
+_`L
+!!B&j_
+v5 z
+N;~2'
+_9)]
+Y;`&@
+X#?e
+1Yj'CV
+)7(UZ
+:PB`
+2=|Nf
+{r`<
+xhrW
+jWF/,
+.Qy 
+/u9Y
+{3{2a
+ui@@
+XYqVMA
+I>r%OUd
+d{*h
+w{>Y
+Xnj^
+FKTPEe
+$RQo(
+)@m^
+;`emO
+t<lU
+L*dZ
+F\xH@Uf
+w:X~
+Z`W 
+lw-F
+n,W+
+QHgI
+I Lp
+ZR**
+..jk
+y;6O
+g&
+'-s2UI
+6NS*
+7i$c
+%^|~
+wu_,gy;
+fr^XCj
+_DU_
+gCxO
+endstream
+endobj
+13 0 obj
+/Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [300.59302 781.16522 314.84842 792.41949]
+/A 103 0 R
+/StructParent 100000
+endobj
+14 0 obj
+/Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [314.84842 781.16522 317.09921 792.41949]
+/A 104 0 R
+/StructParent 100001
+endobj
+15 0 obj
+/Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [317.09921 781.16522 331.35461 792.41949]
+/A 105 0 R
+/StructParent 100002
+endobj
+16 0 obj
+/Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [331.35461 781.16522 333.60547 792.41949]
+/A 106 0 R
+/StructParent 100003
+endobj
+17 0 obj
+/Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [333.60547 781.16522 347.86084 792.41949]
+/A 107 0 R
+/StructParent 100004
+endobj
+18 0 obj
+/Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [347.86084 781.16522 349.36142 792.41949]
+/A 108 0 R
+/StructParent 100005
+endobj
+19 0 obj
+/Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [349.36142 781.16522 371.1196 792.41949]
+/A 109 0 R
+/StructParent 100006
+endobj
+20 0 obj
+/Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [251.82465 771.41156 347.11053 782.66577]
+/A 110 0 R
+/StructParent 100007
+endobj
+21 0 obj
+/Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [163.799469 718.65594 199.81302 729.91016]
+/A 111 0 R
+/StructParent 100008
+endobj
+22 0 obj
+/Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [199.81302 718.65594 225.32263 729.91016]
+/A 112 0 R
+/StructParent 100009
+endobj
+23 0 obj
+/Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [225.32263 718.65594 229.07404 729.91016]
+/A 113 0 R
+/StructParent 100010
+endobj
+24 0 obj
+/Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [229.07404 718.65594 293.59836 729.91016]
+/A 114 0 R
+/StructParent 100011
+endobj
+25 0 obj
+/Type /Annot
+/Subtype /Link
+/F 4
+/Border [0 0 0]
+/Rect [297.34979 718.65594 342.36673 729.91016]
+/A 115 0 R
+/StructParent 100012
+endobj
+26 0 obj
+/Length 136
+/Filter /FlateDecode
+stream
+0Dw
+g$R;n
+|isv
++pU{d
+1[Ew
+endstream
+endobj
+27 0 obj
+/G3 116 0 R
+/gs2 117 0 R
+endobj
+28 0 obj
+/Length 7267
+/Type /XObject
+/Subtype /Form
+/Resources <<
+/ProcSet [/PDF /Text /ImageB /ImageC /ImageI]
+/ExtGState 118 0 R
+/XObject <<
+/X4 119 0 R
+/Font 120 0 R
+/BBox [0 0 2177 3255]
+/Group 121 0 R
+/Filter /FlateDecode
+stream
+ a<g
+6:(w
+)czsZ
+mZcz,|
+?w[7J
+nllBv
+ Lr"O
+>]T=|
+OIB0
+ &yb
+6 ,u
+olSz
+UE![
+rk72Ii
+&JY3
+AMe;
+vf,`
+.d?*
+0B,2
+R"RF
+Ib~>
+:{jb
++Yio
+dG1W}V
+ ]%1
+l6)/
+ +V6D
+[H~:i
+n^[]
+fY5!
+ME%>cP`i
+1J_9
+-.dF~a
+,nE(
+lG[6pCN!
+JvRn
+{)!d
++lcd
+zCKF
+'sAf
+tHr`
+BrbD
+\:lv
+*qq<
+g~A/@na
+WnwJ
+lzw!
+1&ykN"
+M8me
+O^08
+id[l;|
+aCz>
+t-?:
+aQ?E
+Y`{e
+sC4*
+2rM.
+k~bl
+E@4r
+^nN]G
+P2BU,H
+E`[g
++j!El^
+u3$W
+l6o[/
+1&#},
+:6A$
+{,c;
+lbU/
+Eb~.
+Lg],Ac
+`9*I
+BiCX3,w
+xq}kctKU*c
+,i%e
+M2q&
+mL8?
+sx8E
+WLen
+']EM\
+CA>,
+(q!1^e
+A(N,
+](v;e/
+7`rT)0j
+gBia,
+<m9TjI
+endstream
+endobj
+29 0 obj
+/Length 186
+/Filter /FlateDecode
+stream
+>G8.
+endstream
+endobj
+30 0 obj
+/Type /StructElem
+/S /Part
+/P 9 0 R
+/Pg 7 0 R
+/K [35 0 R 36 0 R 37 0 R 32 0 R 52 0 R 40 0 R 33 0 R 53 0 R 51 0 R 34 0 R
+54 0 R 38 0 R 39 0 R 57 0 R 122 0 R 56 0 R 47 0 R 48 0 R 49 0 R 50 0 R
+55 0 R 41 0 R 123 0 R 42 0 R 43 0 R 44 0 R 45 0 R 46 0 R 60 0 R 58 0 R
+59 0 R 61 0 R 64 0 R 62 0 R 63 0 R]
+endobj
+31 0 obj
+/Type /StructElem
+/S /Part
+/P 9 0 R
+/Pg 8 0 R
+/K [65 0 R 79 0 R 82 0 R 73 0 R 74 0 R 75 0 R 76 0 R 77 0 R 84 0 R 70 0 R
+124 0 R 71 0 R 72 0 R 86 0 R 87 0 R 88 0 R 89 0 R 90 0 R 91 0 R 92 0 R
+93 0 R 66 0 R 80 0 R 68 0 R 85 0 R 67 0 R 78 0 R 83 0 R 94 0 R 81 0 R
+69 0 R]
+endobj
+32 0 obj
+/Type /StructElem
+/S /Figure
+/P 30 0 R
+/Pg 7 0 R
+/K [0]
+endobj
+33 0 obj
+/Type /StructElem
+/S /Figure
+/P 30 0 R
+/Pg 7 0 R
+/K [1]
+endobj
+34 0 obj
+/Type /StructElem
+/S /Figure
+/P 30 0 R
+/Pg 7 0 R
+/K [2]
+endobj
+35 0 obj
+/Type /StructElem
+/S /P
+/P 30 0 R
+/E (Mehmet Can Yavuz, )
+/Pg 7 0 R
+/K [3]
+endobj
+36 0 obj
+/Type /StructElem
+/S /P
+/P 30 0 R
+/E (Software Developer)
+/Pg 7 0 R
+/K [4]
+endobj
+37 0 obj
+/Type /StructElem
+/S /P
+/P 30 0 R
+/E (10th January 1996, +90 538 895 1301, mcanyvz1996@gmail.com)
+/Pg 7 0 R
+/K [5]
+endobj
+38 0 obj
+/Type /StructElem
+/S /P
+/P 30 0 R
+/E <4D61792032303232208420536570203230323220497374616E62756C>
+/Pg 7 0 R
+/K [6 7]
+endobj
+39 0 obj
+/Type /StructElem
+/S /P
+/P 30 0 R
+/E <46616220323032332084204D617920323032332052656D6F7465>
+/Pg 7 0 R
+/K [8 9]
+endobj
+40 0 obj
+/Type /StructElem
+/S /P
+/P 30 0 R
+/E (LinkedIn, GitHub, Personal-Website, Github Work)
+/Pg 7 0 R
+/K [10]
+endobj
+41 0 obj
+/Type /StructElem
+/S /P
+/P 30 0 R
+/E (I gained hands-on experience with software development technologies such as Next.js, SQL, Tailwind, Prisma, and more by building a production-ready web application for enterprise-level clients.)
+/Pg 7 0 R
+/K [11 12]
+endobj
+42 0 obj
+/Type /StructElem
+/S /P
+/P 30 0 R
+/E (time-to-market by 50%.)
+/Pg 7 0 R
+/K [13 14]
+endobj
+43 0 obj
+/Type /StructElem
+/S /P
+/P 30 0 R
+/E <8020417263686974656374656420616E20696E2D6170702077696E646F772073797374656D2C20616C6C6F77696E6720757365727320746F206E6176696761746520667265656C79206265747765656E2077696E646F777320616E64>
+/Pg 7 0 R
+/K [15]
+endobj
+44 0 obj
+/Type /StructElem
+/S /P
+/P 30 0 R
+/E (increasing user productivity and satisfaction.)
+/Pg 7 0 R
+/K [16]
+endobj
+45 0 obj
+/Type /StructElem
+/S /P
+/P 30 0 R
+/E <8020446576656C6F70656420616E6420656E68616E636564206120637573746F6D20666F726D2076616C69646174696F6E6C6962726172792C20696D70726F76696E67206461746120696E7465677269747920616E642075736572>
+/Pg 7 0 R
+/K [17]
+endobj
+46 0 obj
+/Type /StructElem
+/S /P
+/P 30 0 R
+/E (satisfaction.)
+/Pg 7 0 R
+/K [18]
+endobj
+47 0 obj
+/Type /StructElem
+/S /P
+/P 30 0 R
+/E (I gained hands-on experience with software development technologies such as .NET, SQL, WPF, DevExpress, and more by building production-ready web applications for enterprise-level clients.)
+/Pg 7 0 R
+/K [19]
+endobj
+48 0 obj
+/Type /StructElem
+/S /P
+/P 30 0 R
+/E <8020436F6C6C61626F726174656420696E2074686520646576656C6F706D656E74206F6620696E746567726174656420736F66747761726520736F6C7574696F6E73207573696E67202E4E455420616E6420446576657870726573732E>
+/Pg 7 0 R
+/K [20 21]
+endobj
+49 0 obj
+/Type /StructElem
+/S /P
+/P 30 0 R
+/E <8020417373697374656420696E2070726F6A65637420706C616E6E696E6720616E6420696D706C656D656E746174696F6E2C20636F6E747269627574696E6720746F20646576656C6F70696E6720656666696369656E7420616E64207363616C61626C65>
+/Pg 7 0 R
+/K [22]
+endobj
+50 0 obj
+/Type /StructElem
+/S /P
+/P 30 0 R
+/E (applications.)
+/Pg 7 0 R
+/K [23]
+endobj
+51 0 obj
+/Type /StructElem
+/S /P
+/P 30 0 R
+/E (My journey with computers, which began when I was 10 years old, led me to the software industry, which I love so much that it shows I'm on the right path. This is more than just a job. From the days when I created things in Paint on Windows 95, I now develop the latest software using macOS. Creating products and scaling them to make people's lives easier is currently one of the things I enjoy most. I want to continue creating user-friendly products by using the latest technologies to produce products in the world of computing and technology that spans from the past to the present and into the future.)
+/Pg 7 0 R
+/K [24]
+endobj
+52 0 obj
+/Type /StructElem
+/S /H2
+/P 30 0 R
+/T (LINKS)
+/E (LINKS)
+/Pg 7 0 R
+/K [25]
+endobj
+53 0 obj
+/Type /StructElem
+/S /H2
+/P 30 0 R
+/T (PROFILE)
+/E (PROFILE)
+/Pg 7 0 R
+/K [26]
+endobj
+54 0 obj
+/Type /StructElem
+/S /H2
+/P 30 0 R
+/T (EMPLOYMENT HISTORY)
+/E (EMPLOYMENT HISTORY)
+/Pg 7 0 R
+/K [27]
+endobj
+55 0 obj
+/Type /StructElem
+/S /H1
+/P 30 0 R
+/T <FEFF00460075006C006C00200053007400610063006B00200044006500760065006C006F00700065007200200049006E007400650072006E002C0020004D0069006D0073002000590061007A0131006C0131006D00200041002E015E002E>
+/E <FEFF00460075006C006C00200053007400610063006B00200044006500760065006C006F00700065007200200049006E007400650072006E002C0020004D0069006D0073002000590061007A0131006C0131006D00200041002E015E002E>
+/Pg 7 0 R
+/K [28]
+endobj
+56 0 obj
+/Type /StructElem
+/S /H1
+/P 30 0 R
+/T <FEFF00460075006C006C00200053007400610063006B00200044006500760065006C006F00700065007200200049006E007400650072006E002C0020005300650063007500620065002000540065006B006E006F006C006F006A0069002000410052002D0047004500200041002E015E002E>
+/E <FEFF00460075006C006C00200053007400610063006B00200044006500760065006C006F00700065007200200049006E007400650072006E002C0020005300650063007500620065002000540065006B006E006F006C006F006A0069002000410052002D0047004500200041002E015E002E>
+/Pg 7 0 R
+/K [29]
+endobj
+57 0 obj
+/Type /StructElem
+/S /P
+/P 30 0 R
+/E <4E6F762032303234208420204F6E676F696E67>
+/Pg 7 0 R
+/K [30 31]
+endobj
+58 0 obj
+/Type /StructElem
+/S /P
+/P 30 0 R
+/E <4920646576656C6F70656420636F6D70726568656E73697665206D616E6167656D656E7420736F667477617265207461696C6F72656420666F722073706F72747320636C7562732C206D7573696320636F75727365732C20616E6420656475636174696F6E616C20696E737469747574696F6E73206F7065726174696E67206F6E2061206D656D626572736869702D6261736564206D6F64656C2E20496E206164646974696F6E2C2049206275696C74206120726F6C652D626173656420776562206170706C69636174696F6E2070616E656C2076696120612064656469636174656420706F7274616C20666F72207072697661746520736563746F7220636C69656E74732E20546869732070726F6A6563742070726F7669646564206D6520776974682066756C6C2D6379636C6520657870657269656E636520696E2070726F64756374206372656174696F6E20842066726F6D20696E697469616C2064657369676E20746F206C61756E6368208420656E61626C696E67206D6520746F2064656C69766572206120636F6D706C657465205361615320736F6C7574696F6E2066726F6D20736372617463682E>
+/Pg 7 0 R
+/K [32]
+endobj
+59 0 obj
+/Type /StructElem
+/S /P
+/P 30 0 R
+/E <8020417320616E20696E2D686F75736520736F66747761726520646576656C6F7065722C204920696E646570656E64656E746C79206C65642074686520646576656C6F706D656E742070726F6365737320776974682067756964616E63652066726F6D20612053656E696F7220446576656C6F70657220616E64207375636365737366756C6C79206C61756E63686564207468652070726F6475637420666F7220637573746F6D6572207573652E>
+/Pg 7 0 R
+/K [33]
+endobj
+60 0 obj
+/Type /StructElem
+/S /H1
+/P 30 0 R
+/T (Full Stack Developer, ithinkso)
+/E (Full Stack Developer, ithinkso)
+/Pg 7 0 R
+/K [34]
+endobj
+61 0 obj
+/Type /StructElem
+/S /P
+/P 30 0 R
+/E <80204920656E7375726564206461746120736563757269747920627920696D706C656D656E74696E6720616476616E6365642063727970746F2D626173656420656E6372797074696F6E206D6574686F647320616E6420>
+/Pg 7 0 R
+/K [35]
+endobj
+62 0 obj
+/Type /StructElem
+/S /P
+/P 30 0 R
+/E <8020492066756C6C7920696E636F72706F726174656420637573746F6D657220726571756972656D656E747320616E642063726561746564206120666C657869626C652C206F70656E20706C6174666F726D207468617420616C6C6F77656420>
+/Pg 7 0 R
+/K [36]
+endobj
+63 0 obj
+/Type /StructElem
+/S /P
+/P 30 0 R
+/E (clients to adapt quickly without additional software dependencies.)
+/Pg 7 0 R
+/K [37]
+endobj
+64 0 obj
+/Type /StructElem
+/S /P
+/P 30 0 R
+/E (integrating the latest encryption standards into the platform.)
+/Pg 7 0 R
+/K [38]
+endobj
+65 0 obj
+/Type /StructElem
+/S /Figure
+/P 31 0 R
+/Pg 8 0 R
+/K [0]
+endobj
+66 0 obj
+/Type /StructElem
+/S /Figure
+/P 31 0 R
+/Pg 8 0 R
+/K [1]
+endobj
+67 0 obj
+/Type /StructElem
+/S /Figure
+/P 31 0 R
+/Pg 8 0 R
+/K [2]
+endobj
+68 0 obj
+/Type /StructElem
+/S /P
+/P 31 0 R
+/E <53657020323031392084204A756C2032303233>
+/Pg 8 0 R
+/K [3 4]
+endobj
+69 0 obj
+/Type /StructElem
+/S /P
+/P 31 0 R
+/E (English, Russian)
+/Pg 8 0 R
+/K [5]
+endobj
+70 0 obj
+/Type /StructElem
+/S /P
+/P 31 0 R
+/E (Natural Jam & Marmalade Store: An e-commerce application where 40 products will be listed at the initial start-up level. It sustainably uses modern web technologies using DevOps components. The organic store offers shoppers a seamless shopping experience.)
+/Pg 8 0 R
+/K [6 7]
+endobj
+71 0 obj
+/Type /StructElem
+/S /P
+/P 31 0 R
+/E (e-invoice, and shipping integrations. The project is currently under)
+/Pg 8 0 R
+/K [8]
+endobj
+72 0 obj
+/Type /StructElem
+/S /P
+/P 31 0 R
+/E (construction and is 25 percent complete.)
+/Pg 8 0 R
+/K [9 10]
+endobj
+73 0 obj
+/Type /StructElem
+/S /P
+/P 31 0 R
+/E (Played an integral role throughout the development life cycle of the Ekici Web)
+/Pg 8 0 R
+/K [11]
+endobj
+74 0 obj
+/Type /StructElem
+/S /P
+/P 31 0 R
+/E (App, leveraging state-of-the-art web technologies to automate common)
+/Pg 8 0 R
+/K [12]
+endobj
+75 0 obj
+/Type /StructElem
+/S /P
+/P 31 0 R
+/E (processes. Collaborated closely with a cross-functional team to deliver a)
+/Pg 8 0 R
+/K [13]
+endobj
+76 0 obj
+/Type /StructElem
+/S /P
+/P 31 0 R
+/E (streamlined user interface, enhancing client productivity and satisfaction.)
+/Pg 8 0 R
+/K [14]
+endobj
+77 0 obj
+/Type /StructElem
+/S /P
+/P 31 0 R
+/E (Resulted in significant efficiency gains and positive user feedback.)
+/Pg 8 0 R
+/K [15]
+endobj
+78 0 obj
+/Type /StructElem
+/S /H3
+/P 31 0 R
+/T (SKILLS)
+/E (SKILLS)
+/Pg 8 0 R
+/K [16]
+endobj
+79 0 obj
+/Type /StructElem
+/S /H3
+/P 31 0 R
+/T (PROJECTS)
+/E (PROJECTS)
+/Pg 8 0 R
+/K [17]
+endobj
+80 0 obj
+/Type /StructElem
+/S /H3
+/P 31 0 R
+/T (EDUCATION)
+/E (EDUCATION)
+/Pg 8 0 R
+/K [18]
+endobj
+81 0 obj
+/Type /StructElem
+/S /H3
+/P 31 0 R
+/T (LANGUAGES)
+/E (LANGUAGES)
+/Pg 8 0 R
+/K [19]
+endobj
+82 0 obj
+/Type /StructElem
+/S /H1
+/P 31 0 R
+/T (Ekici Web Automation)
+/E (Ekici Web Automation)
+/Pg 8 0 R
+/K [20]
+endobj
+83 0 obj
+/Type /StructElem
+/S /H2
+/P 31 0 R
+/T (Javascript, React, Next.js, SQL, Dotnet, Git)
+/E (Javascript, React, Next.js, SQL, Dotnet, Git)
+/Pg 8 0 R
+/K [21]
+endobj
+84 0 obj
+/Type /StructElem
+/S /H1
+/P 31 0 R
+/T (Natural Jam & Marmalade Store - E-Commerce Sales)
+/E (Natural Jam & Marmalade Store - E-Commerce Sales)
+/Pg 8 0 R
+/K [22 23]
+endobj
+85 0 obj
+/Type /StructElem
+/S /H2
+/P 31 0 R
+/T (Software Engineering, National Technical University Kharkiv Polytechnic Institute)
+/E (Software Engineering, National Technical University Kharkiv Polytechnic Institute)
+/Pg 8 0 R
+/K [24]
+endobj
+86 0 obj
+/Type /StructElem
+/S /H1
+/P 31 0 R
+/T (Management Software for Sports Schools and Educational Institutions)
+/E (Management Software for Sports Schools and Educational Institutions)
+/Pg 8 0 R
+/K [25]
+endobj
+87 0 obj
+/Type /StructElem
+/S /P
+/P 31 0 R
+/E (LUMO is a panel-based management software developed for sports clubs, music courses, and all educational institutions operating on a membership model. With its fast, reliable, and traceable infrastructure, it offers the ability to manage all processes from membership tracking to payment systems, from class schedules to field reservations, all from a single center.)
+/Pg 8 0 R
+/K [26]
+endobj
+88 0 obj
+/Type /StructElem
+/S /P
+/P 31 0 R
+/E (However, LUMO is not limited to basic operations. It also includes comprehensive financial solutions such as inventory management, detailed reporting, balance sheet creation, tracking of lesson payments for parents and students, and management of instructors' salaries and benefits.)
+/Pg 8 0 R
+/K [27]
+endobj
+89 0 obj
+/Type /StructElem
+/S /P
+/P 31 0 R
+/E (The software stands out with its modular structure. This allows institutions to purchase only the modules or APIs they need, providing a flexible and scalable user experience. This approach offers cost advantages for institutions of different sizes while appealing to a wide user base with its multi-product offering.)
+/Pg 8 0 R
+/K [28]
+endobj
+90 0 obj
+/Type /StructElem
+/S /H1
+/P 31 0 R
+/T (Shipyard Production and Quality Management Software)
+/E (Shipyard Production and Quality Management Software)
+/Pg 8 0 R
+/K [29]
+endobj
+91 0 obj
+/Type /StructElem
+/S /P
+/P 31 0 R
+/E (This software enables shipyards to instantly track the parts they produce for ships and the craftsmen who produce these parts. The dimensions, size, width, quantity, and all technical details of the products are recorded and tracked through the system. Thus, potential errors are detected before the products reach the shipping stage, preventing the shipment of defective products and minimizing the risk of penalties for shipyards.)
+/Pg 8 0 R
+/K [30]
+endobj
+92 0 obj
+/Type /StructElem
+/S /P
+/P 31 0 R
+/E (The system also continuously analyzes the speed and cost averages of the parts produced and reports on production performance. The quality of the craftsmen's work is measured, and their productivity is regularly monitored. All processes are digitized through data entry via barcodes or QR codes, ensuring error-free, transparent production management.)
+/Pg 8 0 R
+/K [31]
+endobj
+93 0 obj
+/Type /StructElem
+/S /P
+/P 31 0 R
+/E (Built on a multilingual infrastructure on a global scale, this management software aims to increase shipyards' production quality and speed, enhance their competitiveness, and reduce operational costs.)
+/Pg 8 0 R
+/K [32]
+endobj
+94 0 obj
+/Type /StructElem
+/S /Figure
+/P 31 0 R
+/Pg 8 0 R
+/K [33]
+endobj
+95 0 obj
+/ca 1
+/BM /Normal
+endobj
+96 0 obj
+/G3 95 0 R
+endobj
+97 0 obj
+/Length 28
+/Type /XObject
+/Subtype /Image
+/Width 675
+/Height 2
+/ColorSpace [/ICCBased 125 0 R]
+/SMask 126 0 R
+/BitsPerComponent 8
+/Filter /FlateDecode
+stream
+endstream
+endobj
+98 0 obj
+/Length 208
+/Type /XObject
+/Subtype /Form
+/Resources <<
+/ProcSet [/PDF /Text /ImageB /ImageC /ImageI]
+/ExtGState 127 0 R
+/Font 128 0 R
+/BBox [0 0 130 48]
+/Group 129 0 R
+/Filter /FlateDecode
+stream
+JCA
+QcO!
+endstream
+endobj
+99 0 obj
+/Length 1492
+/Type /XObject
+/Subtype /Form
+/Resources <<
+/ProcSet [/PDF /Text /ImageB /ImageC /ImageI]
+/ExtGState 130 0 R
+/Font 131 0 R
+/BBox [0 0 1602 383]
+/Group 132 0 R
+/Filter /FlateDecode
+stream
+SVtn+
+WVLQP
+%oMsd
+&f?7
+4s]/
+sxO-
+vA@6
+4SZV
+`fEY
+'sqS
+]q.#
+ | ;
+p,pU
+6H5-
+8%9>
+}3Js
+`IV|
+.r;Q
+endstream
+endobj
+100 0 obj
+/Length 542
+/Type /XObject
+/Subtype /Form
+/Resources <<
+/ProcSet [/PDF /Text /ImageB /ImageC /ImageI]
+/ExtGState 133 0 R
+/Font 134 0 R
+/BBox [0 0 1451 48]
+/Group 135 0 R
+/Filter /FlateDecode
+stream
+1:Go
+OUe0Y=
+$mP7_
+%AfA
+>x@7
+)!iB
+~&k7'
+@"ds
+endstream
+endobj
+101 0 obj
+/F7 136 0 R
+/F8 137 0 R
+/F9 138 0 R
+/F10 139 0 R
+/F11 140 0 R
+/F12 141 0 R
+endobj
+102 0 obj
+/Type /Group
+/S /Transparency
+/I true
+endobj
+103 0 obj
+/Type /Action
+/S /URI
+/URI (mailto:mcanyvz1996@gmail.com)
+endobj
+104 0 obj
+/Type /Action
+/S /URI
+/URI (mailto:mcanyvz1996@gmail.com)
+endobj
+105 0 obj
+/Type /Action
+/S /URI
+/URI (mailto:mcanyvz1996@gmail.com)
+endobj
+106 0 obj
+/Type /Action
+/S /URI
+/URI (mailto:mcanyvz1996@gmail.com)
+endobj
+107 0 obj
+/Type /Action
+/S /URI
+/URI (mailto:mcanyvz1996@gmail.com)
+endobj
+108 0 obj
+/Type /Action
+/S /URI
+/URI (mailto:mcanyvz1996@gmail.com)
+endobj
+109 0 obj
+/Type /Action
+/S /URI
+/URI (mailto:mcanyvz1996@gmail.com)
+endobj
+110 0 obj
+/Type /Action
+/S /URI
+/URI (mailto:mcanyvz1996@gmail.com)
+endobj
+111 0 obj
+/Type /Action
+/S /URI
+/URI (https://www.linkedin.com/in/mcy96/)
+endobj
+112 0 obj
+/Type /Action
+/S /URI
+/URI (https://github.com/canyavuzdb)
+endobj
+113 0 obj
+/Type /Action
+/S /URI
+/URI (https://www.linkedin.com/in/mcy96/)
+endobj
+114 0 obj
+/Type /Action
+/S /URI
+/URI (https://canyavuzdb.vercel.app/)
+endobj
+115 0 obj
+/Type /Action
+/S /URI
+/URI (https://github.com/mcyithinkso)
+endobj
+116 0 obj
+/ca 1
+/BM /Normal
+endobj
+117 0 obj
+/Type /ExtGState
+/ca 0.0
+endobj
+118 0 obj
+/G3 116 0 R
+endobj
+119 0 obj
+/Length 28
+/Type /XObject
+/Subtype /Image
+/Width 675
+/Height 2
+/ColorSpace [/ICCBased 142 0 R]
+/SMask 143 0 R
+/BitsPerComponent 8
+/Filter /FlateDecode
+stream
+endstream
+endobj
+120 0 obj
+/F7 144 0 R
+/F8 145 0 R
+/F9 146 0 R
+/F10 147 0 R
+endobj
+121 0 obj
+/Type /Group
+/S /Transparency
+/I true
+endobj
+122 0 obj
+/Type /StructElem
+/S /P
+/P 30 0 R
+/E ( Full-Time)
+/Pg 7 0 R
+endobj
+123 0 obj
+/Type /StructElem
+/S /P
+/P 30 0 R
+/E <8020436F2D617574686F72656420616E20696E2D686F75736520636F6D706F6E656E74206C6962726172792C616363656C65726174696E6720646576656C6F706D656E7420616E64207265647563696E67>
+/Pg 7 0 R
+endobj
+124 0 obj
+/Type /StructElem
+/S /P
+/P 31 0 R
+/E (Technology stack Next.js, .Net, Azure Web Services, Docker and payment,)
+/Pg 8 0 R
+endobj
+125 0 obj
+/Length 293
+/N 3
+/Filter /FlateDecode
+stream
+iRpi"
+tspu+.
+G@`*
+DGACAa
+mDJH
+endstream
+endobj
+126 0 obj
+/Length 24
+/Type /XObject
+/Subtype /Image
+/Width 675
+/Height 2
+/ColorSpace /DeviceGray
+/BitsPerComponent 8
+/Filter /FlateDecode
+stream
+endstream
+endobj
+127 0 obj
+/G3 95 0 R
+endobj
+128 0 obj
+/F9 138 0 R
+endobj
+129 0 obj
+/Type /Group
+/S /Transparency
+/I true
+endobj
+130 0 obj
+/G3 95 0 R
+endobj
+131 0 obj
+/F9 138 0 R
+endobj
+132 0 obj
+/Type /Group
+/S /Transparency
+/I true
+endobj
+133 0 obj
+/G3 95 0 R
+endobj
+134 0 obj
+/F9 138 0 R
+endobj
+135 0 obj
+/Type /Group
+/S /Transparency
+/I true
+endobj
+136 0 obj
+/Type /Font
+/Subtype /Type0
+/BaseFont /AAAAAA+IBMPlexSans
+/Encoding /Identity-H
+/DescendantFonts [148 0 R]
+/ToUnicode 149 0 R
+endobj
+137 0 obj
+/Type /Font
+/Subtype /Type0
+/BaseFont /AAAAAA+IBMPlexSans
+/Encoding /Identity-H
+/DescendantFonts [150 0 R]
+/ToUnicode 151 0 R
+endobj
+138 0 obj
+/Type /Font
+/Subtype /Type0
+/BaseFont /BAAAAA+IBMPlexSansCond
+/Encoding /Identity-H
+/DescendantFonts [152 0 R]
+/ToUnicode 153 0 R
+endobj
+139 0 obj
+/Type /Font
+/Subtype /Type0
+/BaseFont /BAAAAA+IBMPlexSansCond
+/Encoding /Identity-H
+/DescendantFonts [154 0 R]
+/ToUnicode 155 0 R
+endobj
+140 0 obj
+/Type /Font
+/Subtype /Type0
+/BaseFont /BAAAAA+IBMPlexSansCond
+/Encoding /Identity-H
+/DescendantFonts [156 0 R]
+/ToUnicode 157 0 R
+endobj
+141 0 obj
+/Type /Font
+/Subtype /Type0
+/BaseFont /BAAAAA+IBMPlexSansCond
+/Encoding /Identity-H
+/DescendantFonts [158 0 R]
+/ToUnicode 159 0 R
+endobj
+142 0 obj
+/Length 293
+/N 3
+/Filter /FlateDecode
+stream
+iRpi"
+tspu+.
+G@`*
+DGACAa
+mDJH
+endstream
+endobj
+143 0 obj
+/Length 24
+/Type /XObject
+/Subtype /Image
+/Width 675
+/Height 2
+/ColorSpace /DeviceGray
+/BitsPerComponent 8
+/Filter /FlateDecode
+stream
+endstream
+endobj
+144 0 obj
+/Type /Font
+/Subtype /Type0
+/BaseFont /AAAAAA+IBMPlexSansCond
+/Encoding /Identity-H
+/DescendantFonts [160 0 R]
+/ToUnicode 161 0 R
+endobj
+145 0 obj
+/Type /Font
+/Subtype /Type0
+/BaseFont /AAAAAA+IBMPlexSansCond
+/Encoding /Identity-H
+/DescendantFonts [162 0 R]
+/ToUnicode 163 0 R
+endobj
+146 0 obj
+/Type /Font
+/Subtype /Type0
+/BaseFont /BAAAAA+IBMPlexSansCond-Bold
+/Encoding /Identity-H
+/DescendantFonts [164 0 R]
+/ToUnicode 165 0 R
+endobj
+147 0 obj
+/Type /Font
+/Subtype /Type0
+/BaseFont /BAAAAA+IBMPlexSansCond-Bold
+/Encoding /Identity-H
+/DescendantFonts [166 0 R]
+/ToUnicode 167 0 R
+endobj
+148 0 obj
+/Type /Font
+/FontDescriptor 168 0 R
+/BaseFont /AAAAAA+IBMPlexSans
+/Subtype /CIDFontType2
+/CIDToGIDMap /Identity
+/CIDSystemInfo 169 0 R
+/W [0 [472 0 0 236 534]
+ 9 [549 324]
+ 18 [272 873]
+ 21 [560 580 0 367 0 351]
+ 28 [492 768 0 0 464 0 0 621 671]
+45 [812]
+ 51 [581]
+ 57 [593]
+ 81 [272]
+/DW 568
+endobj
+149 0 obj
+/Length 311
+/Filter /FlateDecode
+stream
+smTX
+9"5j
+gUUU9
+!"z!:!E'
+endstream
+endobj
+150 0 obj
+/Type /Font
+/FontDescriptor 170 0 R
+/BaseFont /AAAAAA+IBMPlexSans
+/Subtype /CIDFontType2
+/CIDToGIDMap /Identity
+/CIDSystemInfo 171 0 R
+/W [0 [472]
+/DW 236
+endobj
+151 0 obj
+/Length 228
+/Filter /FlateDecode
+stream
+tk%C
+Jjhd
+B3R-
+@co9
+endstream
+endobj
+152 0 obj
+/Type /Font
+/FontDescriptor 172 0 R
+/BaseFont /BAAAAA+IBMPlexSansCond
+/Subtype /CIDFontType2
+/CIDToGIDMap /Identity
+/CIDSystemInfo 173 0 R
+/W [0 [424 0 0 212 483 0 524 454 524 495
+294 477 0 0 513 228 228 477 247 787
+513 504 524 524 332 439 318 513 445 698
+459 451 421 579 0 561 607 526 505 627
+637 362 462 574 453 730 637 638 548 638
+578 525 516 0 0 808 0 534]
+ 73 [360 0 0 702 0 248 0 0 248 0
+220]
+ 108 [837]
+ 139 [358]
+ 258 [228]
+465 [525]
+/DW 540
+endobj
+153 0 obj
+/Length 360
+/Filter /FlateDecode
+stream
+Rx :
+SfXS
+endstream
+endobj
+154 0 obj
+/Type /Font
+/FontDescriptor 174 0 R
+/BaseFont /BAAAAA+IBMPlexSansCond
+/Subtype /CIDFontType2
+/CIDToGIDMap /Identity
+/CIDSystemInfo 175 0 R
+/W [0 [424 0 0 212]
+ 14 [513 228]
+ 20 [513 504 0 0 0 439 318]
+ 47 [638]
+/DW 477
+endobj
+155 0 obj
+/Length 282
+/Filter /FlateDecode
+stream
+{.rv
+endstream
+endobj
+156 0 obj
+/Type /Font
+/FontDescriptor 176 0 R
+/BaseFont /BAAAAA+IBMPlexSansCond
+/Subtype /CIDFontType2
+/CIDToGIDMap /Identity
+/CIDSystemInfo 177 0 R
+/W [0 [424 0 0 212 483 0 524 454 524 495
+0 477]
+ 15 [228 0 477 247 787]
+ 21 [504 0 0 332 439 318]
+ 28 [445 0 0 451 421]
+ 39 [627 637 362 0 0 453 0 0 0 548]
+55 [808]
+ 62 70 540 72 [803 360]
+ 78 81 248]
+/DW 513
+endobj
+157 0 obj
+/Length 345
+/Filter /FlateDecode
+stream
+z2N*
+endstream
+endobj
+158 0 obj
+/Type /Font
+/FontDescriptor 178 0 R
+/BaseFont /BAAAAA+IBMPlexSansCond
+/Subtype /CIDFontType2
+/CIDToGIDMap /Identity
+/CIDSystemInfo 179 0 R
+/W [0 [424 0 0 0 483 0 524 0 0 495]
+ 15 [228 0 0 247 787]
+ 21 [504 0 0 0 439 318]
+ 38 [505 0 0 362]
+ 50 [578 0 516]
+73 [360]
+/DW 513
+endobj
+159 0 obj
+/Length 295
+/Filter /FlateDecode
+stream
+ql\?
+6'3]q
+"Et$
+*QNQ
+I!dN9
+endstream
+endobj
+160 0 obj
+/Type /Font
+/FontDescriptor 180 0 R
+/BaseFont /AAAAAA+IBMPlexSansCond
+/Subtype /CIDFontType2
+/CIDToGIDMap /Identity
+/CIDSystemInfo 181 0 R
+/W [0 [424 0 0 212 483 0 524 454 524 495
+294 477 0 0 513 228 228 477 247 787
+513 504 524 524 332 439 318 513 445 698
+459 451 421 579 589 561 607 526 0 627
+637 362 462 574 453 730 637 638 548 638
+578 525 516 611 0 808]
+ 71 [626 0 360 0 0 702 0 248 0 258
+248 0 220]
+/DW 540
+endobj
+161 0 obj
+/Length 333
+/Filter /FlateDecode
+stream
+kC"A
+z=y7
+/`<
+w9"E
+endstream
+endobj
+162 0 obj
+/Type /Font
+/FontDescriptor 182 0 R
+/BaseFont /AAAAAA+IBMPlexSansCond
+/Subtype /CIDFontType2
+/CIDToGIDMap /Identity
+/CIDSystemInfo 183 0 R
+/W [0 [424 0 0 212 483 0 0 454 0 495]
+ 20 [513 504 524 0 332 439 318 0 445 0
+459]
+ 36 [607 0 0 627 0 362 462 574 453 0
+637 0 0 638 578 525]
+ 78 81 248]
+/DW 228
+endobj
+163 0 obj
+/Length 324
+/Filter /FlateDecode
+stream
+<2N?
+8rae}
+u!<.h
+HeP_
+endstream
+endobj
+164 0 obj
+/Type /Font
+/FontDescriptor 184 0 R
+/BaseFont /BAAAAA+IBMPlexSansCond-Bold
+/Subtype /CIDFontType2
+/CIDToGIDMap /Identity
+/CIDSystemInfo 185 0 R
+/W [0 [424 0 0 212 516 0 550 468 550 508
+341 499]
+ 15 [262 0 524 277 808]
+ 21 [508 550 0 367 455 342]
+ 29 [756 0 496 0 618 0 589 0 549 0
+0 0 397 506 0 0 738 654 0 595
+642 0 556 0 0 0 884]
+ 71 [652 0 360]
+/DW 540
+endobj
+165 0 obj
+/Length 341
+/Filter /FlateDecode
+stream
+BjaH
+$a6m
+<EX)
+{FH"A:!
+endstream
+endobj
+166 0 obj
+/Type /Font
+/FontDescriptor 186 0 R
+/BaseFont /BAAAAA+IBMPlexSansCond-Bold
+/Subtype /CIDFontType2
+/CIDToGIDMap /Identity
+/CIDSystemInfo 187 0 R
+/W [0 [424]
+/DW 212
+endobj
+167 0 obj
+/Length 228
+/Filter /FlateDecode
+stream
+tk%C
+Jjhd
+B3R-
+@co9
+endstream
+endobj
+168 0 obj
+/Type /FontDescriptor
+/FontName /AAAAAA+IBMPlexSans
+/Flags 4
+/Ascent 1025
+/Descent -275
+/StemV 125
+/CapHeight 698
+/ItalicAngle 0
+/FontBBox [-260 -245 1241 1119]
+/FontFile2 188 0 R
+endobj
+169 0 obj
+/Registry (Adobe)
+/Ordering (Identity)
+/Supplement 0
+endobj
+170 0 obj
+/Type /FontDescriptor
+/FontName /AAAAAA+IBMPlexSans
+/Flags 4
+/Ascent 1025
+/Descent -275
+/StemV 125
+/CapHeight 698
+/ItalicAngle 0
+/FontBBox [-260 -245 1241 1119]
+/FontFile2 189 0 R
+endobj
+171 0 obj
+/Registry (Adobe)
+/Ordering (Identity)
+/Supplement 0
+endobj
+172 0 obj
+/Type /FontDescriptor
+/FontName /BAAAAA+IBMPlexSansCond
+/Flags 4
+/Ascent 1025
+/Descent -275
+/StemV 109
+/CapHeight 698
+/ItalicAngle 0
+/FontBBox [-241 -246 1122 1126]
+/FontFile2 190 0 R
+endobj
+173 0 obj
+/Registry (Adobe)
+/Ordering (Identity)
+/Supplement 0
+endobj
+174 0 obj
+/Type /FontDescriptor
+/FontName /BAAAAA+IBMPlexSansCond
+/Flags 4
+/Ascent 1025
+/Descent -275
+/StemV 109
+/CapHeight 698
+/ItalicAngle 0
+/FontBBox [-241 -246 1122 1126]
+/FontFile2 191 0 R
+endobj
+175 0 obj
+/Registry (Adobe)
+/Ordering (Identity)
+/Supplement 0
+endobj
+176 0 obj
+/Type /FontDescriptor
+/FontName /BAAAAA+IBMPlexSansCond
+/Flags 4
+/Ascent 1025
+/Descent -275
+/StemV 109
+/CapHeight 698
+/ItalicAngle 0
+/FontBBox [-241 -246 1122 1126]
+/FontFile2 192 0 R
+endobj
+177 0 obj
+/Registry (Adobe)
+/Ordering (Identity)
+/Supplement 0
+endobj
+178 0 obj
+/Type /FontDescriptor
+/FontName /BAAAAA+IBMPlexSansCond
+/Flags 4
+/Ascent 1025
+/Descent -275
+/StemV 109
+/CapHeight 698
+/ItalicAngle 0
+/FontBBox [-241 -246 1122 1126]
+/FontFile2 193 0 R
+endobj
+179 0 obj
+/Registry (Adobe)
+/Ordering (Identity)
+/Supplement 0
+endobj
+180 0 obj
+/Type /FontDescriptor
+/FontName /AAAAAA+IBMPlexSansCond
+/Flags 4
+/Ascent 1025
+/Descent -275
+/StemV 109
+/CapHeight 698
+/ItalicAngle 0
+/FontBBox [-241 -246 1122 1126]
+/FontFile2 194 0 R
+endobj
+181 0 obj
+/Registry (Adobe)
+/Ordering (Identity)
+/Supplement 0
+endobj
+182 0 obj
+/Type /FontDescriptor
+/FontName /AAAAAA+IBMPlexSansCond
+/Flags 4
+/Ascent 1025
+/Descent -275
+/StemV 109
+/CapHeight 698
+/ItalicAngle 0
+/FontBBox [-241 -246 1122 1126]
+/FontFile2 195 0 R
+endobj
+183 0 obj
+/Registry (Adobe)
+/Ordering (Identity)
+/Supplement 0
+endobj
+184 0 obj
+/Type /FontDescriptor
+/FontName /BAAAAA+IBMPlexSansCond-Bold
+/Flags 4
+/Ascent 1025
+/Descent -275
+/StemV 172
+/CapHeight 698
+/ItalicAngle 0
+/FontBBox [-292 -275 1209 1150]
+/FontFile2 196 0 R
+endobj
+185 0 obj
+/Registry (Adobe)
+/Ordering (Identity)
+/Supplement 0
+endobj
+186 0 obj
+/Type /FontDescriptor
+/FontName /BAAAAA+IBMPlexSansCond-Bold
+/Flags 4
+/Ascent 1025
+/Descent -275
+/StemV 172
+/CapHeight 698
+/ItalicAngle 0
+/FontBBox [-292 -275 1209 1150]
+/FontFile2 197 0 R
+endobj
+187 0 obj
+/Registry (Adobe)
+/Ordering (Identity)
+/Supplement 0
+endobj
+188 0 obj
+/Length 3340
+/Length1 6052
+/Filter /FlateDecode
+stream
+Xkl[
+I]J|H
+|3W 
+t.//-
+9=!c
+A^c}T
+/$J^
+saXxKxK$"
+qUoSX1
+x"]%$
+M&[4
+@gH)
+M\D
+<\ [w
+/g^'r
+r#j@
+B3cg&
+"umg
+HSek
+< 1@
+,`Jx
+Cu(6ecf
+XQj+
++>+u
+%L)0
+D\,vy
+[iC{g
+D8:5
+#(Go
+0%@a
+tSxL
+FUO?
+uxI}
+z3_`
+A'?#
+#i(p
+%__B}f
+~2i(bid
+^jq_C
+endstream
+endobj
+189 0 obj
+/Length 1130
+/Length1 1860
+/Filter /FlateDecode
+stream
+XTj+
+:XGe
+b~.2
+^Y.V~
+#{_76
+((I4G
+,|OF
+ssm[
+4ynP
+jd+{Y}
+s59)
+(Mfr
+9>5CN
+[xbYi
+p*g>LGt
+SNi=
+endstream
+endobj
+190 0 obj
+/Length 7275
+/Length1 16284
+/Filter /FlateDecode
+stream
+ H</
+8x3t
+$!'$
+D[tW-
+*Xvu
+z2gk
+:jG'
+Z8,Z
+L"Wmed
+3x-K
++FVPl
+@<f$
+5Ts3
+D0h/$
+[Rp!
+wD~Q
+sKUeI
+9#?M:
+tvZZ
+#K9:"
+dzl$
+VF{
+'d}E
+9Q#.
+He-[
+;}lw
+J'o/\WRZ
+pxbO
+I"ON
+SBq)GeJ
+J'S
+UJEe
+[{4i`
+9~M$
+a"W3
+JIcS
+46E#
+!FPD
+[]wx
+hE}`pSa]
+H}]eU
+vO~2
+Cacxh
+lYBr
+J#Z^h
+k(SqJ
+`op2
+P_UsLX
+*[^#4
+Ed9d
+Aord
+N"'a
+)(&QA
+UTv0
+:MB7
+ _xT
+7}2
+-2`*
+!GvF
+vIq(
+d_L?
+TO`\
+@,60
+v>25
+*20-2P
+[z U.
+(Fh5
+Sp\\
+Af,G
+P{em
+ vKDq})
+PQ{aoCO,
+M9rQ(
+r\R/
+Td(f
+(|_)s2
+=k>21
+dOj]S
+D+VTR+
+Yu-e35
+o@BYV
+=6,
+l(E5
+XU%i
+ABhM
+Z%J$8M
+ Pb7
+cmYJ
+i3"m
+bgMM
+endstream
+endobj
+191 0 obj
+/Length 2219
+/Length1 3832
+/Filter /FlateDecode
+stream
+n !i
+k75M
+6MZUy
+2iR3
+ujjb
+C#J7gI
+p(wq
+%'#kx)
+A5,x
+lh2
+.qE\
+fL2G
+c~Ck}
+gF":"
+hNd2
+i}/LW
+2Kfii
+.-U.
+8A7M
+kH1Gh
+9S^7
+|1#o
+^9&T"
+"VnO
+hjJ$
+dHm[b
+2N#z
+"ggk
+?\}_
+H&;:
++w-Se
+u]M*
+9ujd
+endstream
+endobj
+192 0 obj
+/Length 4644
+/Length1 8568
+/Filter /FlateDecode
+stream
+Y{P[
+x_!KB
+nBv6S
+7I3M
+ `rx4
+\R+4x
+$h@!
+@;1
+Rfv+*{0
+tljzQ
+Ng!!
+Bet|
+p9]
+RW-y
+!9Lgf
+OC\B9
+^wMM
+e)Td
+ZAmV
+X+h<n(
+m%&V
+|Vn4;
+h2z'
+k.xn
+UC8:b
+-~FE
+-'N[
+;20p$V
+AVR0 
+NIJM
+~sayIw
+lVd3
+Z]$C
+7$xv
+~yg0
+M}mC{AP
+d5Z>r
+ACpx
+$"7)
+u&[yQ
+9STs
+i#N[
+0',(
+~U +
+Y6;y
+gK"\
+S4G.SVrE
+YkI1
+$\KF
+kJ$aXV
+P<qb
+\3{%.)7
+>OG,f|
+<yO_
+H,&a
+HmcB
+d7gxS
+vBXI
+ltNzxy
+w<2:
+S[zp
+jY<k
+endstream
+endobj
+193 0 obj
+/Length 2837
+/Length1 5124
+/Filter /FlateDecode
+stream
+XklS
+Z5uS
+839'
+643=9U
+533=
+^<3yq
+98wna
+ta7R
+Rxi
+Ld/t
+EfY.%
+N.SU_
+Mk/<t
+,r45
+,&1_
+/WfL
+iLqd
+*H7-
+|~gP
+p>Ky9#
+F7vTf
+x``6
+WT*2z
+I^I&3
+e@/.
+]=2
+]~_[[
+*2@,
+P&R_
+;Hm
+7V)X
+)<(`
+2$D 
+uyB4
+6wv$
+a<5U
+hd@c
+(+Mv^i
+Jr;x
+?h1s+
+ICVXA.
+S%7)[
+Wrw8
+v"}w
+@z"=
+h]Uau
+endstream
+endobj
+194 0 obj
+/Length 6875
+/Length1 13068
+/Filter /FlateDecode
+stream
+(qS'
+F'0
+rA'VpA
+Vb/
+Uxsj
+uIqm
+mxYe
+6Ze7fq
+fp6w
+Mg''
+4<618P
+)'?M:
+jq*v
+Ps"TZ
+RZK<
+]qK{(
+\B9d|
+~O*]
+d>wN
+'d}e
+oC+z
+CBGm
+5pF#
+lePZ=
+oenWI'k-1
+`A2-
+#65'n
+r2i(
+|]r$
+@CuC
+ Rq?U_
+g>JYb[v
+t/3.}
+jQ"L
+NaWc
+O/%x
+rcss
+47N<45
+1''=KZ2
+}cY1
+xYVEB
+:<+&
+7X+O'
+jVZve
+Y";'
+#P\V
+"E&&
+W#6-
+2:j0
+VJDm
+;C c5
+r5B-l
+e(&2
+OQ3H
+oZHuJH
+z6Sd
+S.A)
+iTqyP
+e^aM
+mkCCc{\
+]U\+
+{GK#
+L2qd
+fuTs
+{c[T
+i%*|`
+Y;vG
+Xlh(
+/N\J
+F#U.
+YX}kC
+h-wU
++lSt=T
+959}
+&k,R?
+R~j6q
+Jq?JU
+z@o_
+::9t
+s<Q;
+ZZ}u
+,|Og
+endstream
+endobj
+195 0 obj
+/Length 3664
+/Length1 6560
+/Filter /FlateDecode
+stream
+Y{l[
+W$EY
+&mSG
+pjra
+w@w-k
+Ag1
+d[`!{a 
+j#Kl
+%2v3
+RMgc]
+C3/=
+M\A1
+Vt2t
+/<80>=
+x{sx
+Riljv
+ZZz*
+?=nC
+P(Duk
+U`$CE80
+CEe;Kn
+Ne{cS
+vDdX
+ JcS4R
+h*q7
+\xh_
+;:30l
+Z4l:{
+92LL4
+%AV\
+romB
+0!?x
+6bVM
+cG.N
+endstream
+endobj
+196 0 obj
+/Length 4880
+/Length1 8928
+/Filter /FlateDecode
+stream
+vI.)
+X/[v
+hR'E
+oX6<
+[z'l
+_2z
+4=lz
+e/*y
+G'}Z
+y~0A
+NV%@*
+W% T*
+uPYP
+`TYB
+%.,hw
+^7`'Z
+(G)<
+KbF/_
+&&0i
+mh!jY
+Zr Z?z
+r]=b
+E\F)7
+TYmds
+8zdX
+GVTQ6
+I4a?
+taN|
+I}]+
+*RextR
+%zKo
+^RZJ
+L gaB
+dImY
+HHM}
+KL i
+J]&s\R?
+Phvq
+=ttm~R
+[_%^m
+soZg
+Eo0f).1
+Cz'y
+UZGo
+w]:9"
+MV)s
+%"31
+66;"i
+7i2%
+-7^:U
+L-L_%3L7
+G8g=
+o7wt47wt
+8{qtX
+_$7R
+KMA@$
+LfO+i
+3tb4
+-qHu
+endstream
+endobj
+197 0 obj
+/Length 1148
+/Length1 1956
+/Filter /FlateDecode
+stream
+MlTU
+h)B)
+h$,p
+#5qg
+LN-d
+v!s)o
+62xR
+uFI=
+a$<D
+eq$[
+&1*]s
+CWg[
+yR3A
+g?ml
+I3uLq
+^,qT
+J,*\.
+endstream
+endobj
+xref
+0 198
+0000000000 65535 f
+0000000015 00000 n
+0000000379 00000 n
+0000000442 00000 n
+0000000537 00000 n
+0000000587 00000 n
+0000000155 00000 n
+0000000655 00000 n
+0000001130 00000 n
+0000001515 00000 n
+0000001595 00000 n
+0000002160 00000 n
+0000002193 00000 n
+0000008597 00000 n
+0000008748 00000 n
+0000008899 00000 n
+0000009050 00000 n
+0000009201 00000 n
+0000009352 00000 n
+0000009503 00000 n
+0000009653 00000 n
+0000009804 00000 n
+0000009956 00000 n
+0000010107 00000 n
+0000010258 00000 n
+0000010409 00000 n
+0000010560 00000 n
+0000010771 00000 n
+0000010818 00000 n
+0000018351 00000 n
+0000018612 00000 n
+0000018932 00000 n
+0000019223 00000 n
+0000019301 00000 n
+0000019379 00000 n
+0000019457 00000 n
+0000019554 00000 n
+0000019651 00000 n
+0000019788 00000 n
+0000019925 00000 n
+0000020058 00000 n
+0000020185 00000 n
+0000020461 00000 n
+0000020566 00000 n
+0000020830 00000 n
+0000020956 00000 n
+0000021218 00000 n
+0000021311 00000 n
+0000021579 00000 n
+0000021848 00000 n
+0000022128 00000 n
+0000022221 00000 n
+0000022908 00000 n
+0000023005 00000 n
+0000023106 00000 n
+0000023229 00000 n
+0000023692 00000 n
+0000024235 00000 n
+0000024356 00000 n
+0000025296 00000 n
+0000025724 00000 n
+0000025871 00000 n
+0000026125 00000 n
+0000026397 00000 n
+0000026543 00000 n
+0000026685 00000 n
+0000026763 00000 n
+0000026841 00000 n
+0000026919 00000 n
+0000027038 00000 n
+0000027133 00000 n
+0000027469 00000 n
+0000027616 00000 n
+0000027738 00000 n
+0000027896 00000 n
+0000028044 00000 n
+0000028197 00000 n
+0000028352 00000 n
+0000028500 00000 n
+0000028599 00000 n
+0000028702 00000 n
+0000028807 00000 n
+0000028912 00000 n
+0000029039 00000 n
+0000029214 00000 n
+0000029400 00000 n
+0000029649 00000 n
+0000029870 00000 n
+0000030316 00000 n
+0000030678 00000 n
+0000031075 00000 n
+0000031264 00000 n
+0000031776 00000 n
+0000032207 00000 n
+0000032488 00000 n
+0000032567 00000 n
+0000032607 00000 n
+0000032640 00000 n
+0000032861 00000 n
+0000033304 00000 n
+0000035034 00000 n
+0000035813 00000 n
+0000035911 00000 n
+0000035972 00000 n
+0000036053 00000 n
+0000036134 00000 n
+0000036215 00000 n
+0000036296 00000 n
+0000036377 00000 n
+0000036458 00000 n
+0000036539 00000 n
+0000036620 00000 n
+0000036707 00000 n
+0000036789 00000 n
+0000036876 00000 n
+0000036959 00000 n
+0000037042 00000 n
+0000037083 00000 n
+0000037131 00000 n
+0000037166 00000 n
+0000037388 00000 n
+0000037460 00000 n
+0000037521 00000 n
+0000037604 00000 n
+0000037839 00000 n
+0000037983 00000 n
+0000038357 00000 n
+0000038552 00000 n
+0000038586 00000 n
+0000038621 00000 n
+0000038682 00000 n
+0000038716 00000 n
+0000038751 00000 n
+0000038812 00000 n
+0000038846 00000 n
+0000038881 00000 n
+0000038942 00000 n
+0000039091 00000 n
+0000039240 00000 n
+0000039393 00000 n
+0000039546 00000 n
+0000039699 00000 n
+0000039852 00000 n
+0000040226 00000 n
+0000040421 00000 n
+0000040574 00000 n
+0000040727 00000 n
+0000040885 00000 n
+0000041043 00000 n
+0000041361 00000 n
+0000041748 00000 n
+0000041928 00000 n
+0000042232 00000 n
+0000042707 00000 n
+0000043143 00000 n
+0000043387 00000 n
+0000043745 00000 n
+0000044116 00000 n
+0000044537 00000 n
+0000044834 00000 n
+0000045205 00000 n
+0000045641 00000 n
+0000046050 00000 n
+0000046372 00000 n
+0000046772 00000 n
+0000047153 00000 n
+0000047570 00000 n
+0000047759 00000 n
+0000048063 00000 n
+0000048266 00000 n
+0000048342 00000 n
+0000048545 00000 n
+0000048621 00000 n
+0000048828 00000 n
+0000048904 00000 n
+0000049111 00000 n
+0000049187 00000 n
+0000049394 00000 n
+0000049470 00000 n
+0000049677 00000 n
+0000049753 00000 n
+0000049960 00000 n
+0000050036 00000 n
+0000050243 00000 n
+0000050319 00000 n
+0000050531 00000 n
+0000050607 00000 n
+0000050819 00000 n
+0000050895 00000 n
+0000054326 00000 n
+0000055547 00000 n
+0000062914 00000 n
+0000065224 00000 n
+0000069959 00000 n
+0000072887 00000 n
+0000079854 00000 n
+0000083609 00000 n
+0000088580 00000 n
+trailer
+/Root 1 0 R
+/Info 6 0 R
+/ID [<E6D358E53DE9EF68A0CC91320D516143> <E6D358E53DE9EF68A0CC91320D516143>]
+/Size 198
+startxref
+89819
+%%EOF
