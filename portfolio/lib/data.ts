@@ -38,6 +38,7 @@ export const links = [
     hash: "#experience",
     icon: AiOutlineHistory,
   },
+
   {
     name: "Contact",
     hash: "#contact",
@@ -47,56 +48,84 @@ export const links = [
 
 export const Experience = [{}] as const;
 
+
+
+export const experiencesData = [
+  {
+    title: "Full Stack Developer, ithinkso",
+    location: "Full-Time",
+    description: 
+      "I gained comprehensive experience in developing a product from A to Z. I designed the database, designed the patterns to be used, designed the architecture, designed the entire system, and then, on top of that, I single-handedly performed all the processes to bring the application live on Plesk Hosting, enabling a product to be actively used by over 1000+ users. ",
+    icon: React.createElement(CgWorkAlt),
+    date: "Nov 2024 - Ongoing",
+  },
+  {
+    title: "Full Stack Developer Intern, Mims Yazılım A.Ş",
+    location: "Remote",
+    description:
+      "Gained hands-on experience with Next.js, SQL, Tailwind, Prisma. Co-authored an in-house component library reducing time-to-market by 50%. Architected an in-app window system increasing user productivity.",
+    icon: React.createElement(CgWorkAlt),
+    date: "Feb 2023 - May 2023",
+  },
+  {
+    title: "Full Stack Developer Intern, Secube Teknoloji AR-GE A.Ş",
+    location: "Istanbul",
+    description:
+      "Gained hands-on experience with .NET, SQL, WPF, DevExpress. Collaborated in the development of integrated software solutions. Assisted in project planning and implementation of efficient applications.",
+    icon: React.createElement(CgWorkAlt),
+    date: "May 2022 - Sep 2022",
+  },
+] as const;
+
 export const projectsData = [
   {
-    title: "Natural Jam & Marmalade Store",
+    title: "LUMO - Management Software",
     description:
-      "A startup project currently underway, a B2B project, aims to list more than 40 products to users.",
-    tags: ["Docker", ".Net", "Microservice", "RabbitMq", "PostgreSQL"],
+      "Architecture: Microservices with Onion Architecture, SaaS based. Stack: .NET Core, MariaDB, Razor UI, Gateway routing. Security: Advanced Crypto-based encryption. DevOps: Docker Test Databases, Automated Unit Tests. Deployment: Plesk Hosting. Features: Mobile First APIs & Mobile Apps.",
+    tags: [".NET", "Microservices", "MariaDB", "Onion Arch", "Razor UI"],
+    imageUrl: jamImg,
+  },
+  {
+    title: "Shipyard Parts Tracking",
+    description:
+      "Architecture: Microservices with Onion Architecture. Stack: .NET Core, MariaDB, Razor UI, Mobile First APIs. Focus: High-precision real-time tracking for manufacturing. DevOps: Docker Test Databases, Unit Tests. Security: Crypto-based data integrity.",
+    tags: [".NET", "MariaDB", "Mobile First API", "Docker", "Unit Tests"],
+    imageUrl: webautoImg,
+  },
+  {
+    title: "Natural Jam & Marmalade",
+    description:
+      "Architecture: Microservices-based B2B E-commerce. Stack: Next.js consumer app, .NET API gateway. Infrastructure: RabbitMQ for async messaging, PostgreSQL for refined data. DevOps: Docker containers managed on Azure.",
+    tags: ["Next.js", "Microservices", "RabbitMQ", "Docker", "PostgreSQL"],
     imageUrl: jamImg,
   },
   {
     title: "Ekici Web Automation",
     description:
-      "I worked as a full-stack developer on this automation project for 4 months. A multifunctional internal software for company employees.",
-    tags: ["React", "Next.js", "Sql", "Tailwind", "Prisma"],
+      "Process: Internal workflow automation. Stack: Full-stack React/Next.js. Engineering: Custom component library architecture reducing TTM by 50%. Feature: In-app window management system for multitasking.",
+    tags: ["React", "Next.js", "System Design", "Automation"],
     imageUrl: webautoImg,
   },
 ] as const;
 
 export const skillsData = [
+  ".NET",
+  "C#",
   "React",
   "Next.js",
+  "TypeScript",
+  "Go",
+  "PostgreSQL",
+  "SQL",
+  "RabbitMQ",
+  "Docker",
+  "Microservices",
+  "DDD",
+  "CQRS",
   "Tailwind",
-  "Typescript",
   "Prisma",
   "Git",
-  "Docker",
-  "OOP",
-  "PostgreSQL",
-  ".NET",
-  "RabbitMQ",
-  "CQRS",
-  "DDD",
-  "SharedKernel",
   "CI/CD",
-] as const;
-
-export const experiencesData = [
-  {
-    title: "Full-Stack Developer, Mims Yazılım A.Ş",
-    location: "Istanbul",
-    description:
-      "I worked in this job for 4 months when I was in my last year at university and I gained full-stack experience by taking part in a full-time real project.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2023",
-  },
-  {
-    title: "Full-Stack Developer, Secube Teknoloji AR-GE A.Ş. ",
-    location: "Istanbul",
-    description:
-      "As a 3rd year university student, I worked in this job for 5 months and gained full-stack experience by taking part in a full-time real project.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2022",
-  }
+  "OOP",
+  "Seemingly Good at Searching",
 ] as const;
