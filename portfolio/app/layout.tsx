@@ -26,8 +26,9 @@ export default function RootLayout({
       >
         <ActiveLinkContextProvider>
           <div className="geometric-shape"></div>
-          <div className="relative w-[50rem] h-full flex flex-col justify-center z-10">
-            <div className="absolute right-[100%] top-0 h-full flex items-center pr-6">
+          <div className="relative w-full max-w-[50rem] h-full flex flex-col justify-center z-10 box-border px-6 md:px-0">
+            {/* Header: Fixed Top on Mobile, Left Sidebar on Desktop */}
+            <div className="fixed top-6 left-1/2 -translate-x-1/2 z-50 md:absolute md:right-[100%] md:top-0 md:h-full md:flex md:items-center md:pr-6 md:bottom-auto md:left-auto md:translate-x-0">
                 <Header />
             </div>
             {children}
