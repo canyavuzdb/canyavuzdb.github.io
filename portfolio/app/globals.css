@@ -17,8 +17,11 @@ html, body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 65rem;
-  height: 65rem;
+  transform: translate(-50%, -50%);
+  width: 90vw;
+  height: 90vh;
+  max-width: 65rem;
+  max-height: 65rem;
   background-image: url('/final-shape.png');
   background-size: contain;
   background-repeat: no-repeat;
