@@ -3,43 +3,34 @@
 import React from "react";
 import SectionHeading from "./section-heading";
 import { skillsData } from "@/lib/data";
-import { useSectionInView } from "@/lib/hooks";
-import { delay, motion } from "framer-motion";
-import { init } from "next/dist/compiled/webpack/webpack";
-
-const fadeInAnimations = {
-  initial: { opacity: 0, y: 100 },
-  animate: (index: number) => ({
-    opacity: 1,
-    y: 0,
-    transition: {
-      delay: 0.05 * index,
-    },
-  }),
-};
+import { motion } from "framer-motion";
 export default function Skills() {
-  const { ref } = useSectionInView("Skills");
   return (
     <section
-      ref={ref}
       id="skills"
-      className="mb-28 max-w-[49rem] scroll-mt-28 text-center sm:mb-40"
+      className="max-w-[53rem] scroll-mt-28 text-center"
     >
-      <SectionHeading>My Skills</SectionHeading>
-      <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-200">
-        {skillsData.map((skill, index) => (
-          <motion.li
-            className="bg-gray-700 border-black/[0.1] rounded-xl px-4 py-3"
-            key={index}
-            variants={fadeInAnimations}
-            initial="initial"
-            whileInView="animate"
-            viewport={{ once: true }}
-            custom={index}
-          >
-            {skill}
-          </motion.li>
-        ))}
+      <SectionHeading>Technical Skills</SectionHeading>
+      <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-400">
+        {skillsData.map((skill, index) => {
+            const isSpecial = skill === "Seemingly Good at Searching";
+            return (
+                <motion.li
+                className={`border border-white/20 px-5 py-3 text-sm uppercase tracking-widest transition cursor-default
+                    ${isSpecial 
+                        ? "bg-white text-black font-medium" 
+                        : "bg-transparent text-white/80 hover:bg-white hover:text-black"
+                    }`}
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.05 }}
+                >
+                {skill}
+                </motion.li>
+            );
+        })}
       </ul>
     </section>
   );
