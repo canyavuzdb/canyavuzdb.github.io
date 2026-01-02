@@ -55,20 +55,19 @@ const ScrambleLink = ({ text, isActive, onClick }: ScrambleLinkProps) => {
     }, 30);
   };
 
-  const setRandomState = () => {
-      clearInterval(intervalRef.current as NodeJS.Timeout);
-      // Just set it to a static random string to start/reset
-      setDisplayText(getRandomString(text));
-  };
+  const setRandomState = React.useCallback(() => {
+    clearInterval(intervalRef.current as NodeJS.Timeout);
+    setDisplayText(getRandomString(text));
+  }, [text]);
 
   // Initial mount: if not active, scramble it.
   useEffect(() => {
-      if (!isActive) {
-          setRandomState();
-      } else {
-          setDisplayText(text);
-      }
-  }, [isActive]);
+    if (!isActive) {
+      setRandomState();
+    } else {
+      setDisplayText(text);
+    }
+  }, [isActive, text, setRandomState]);
 
   const handleMouseEnter = () => {
     scramble();
