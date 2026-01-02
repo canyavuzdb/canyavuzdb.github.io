@@ -89,7 +89,6 @@ const ScrambleLink = ({ text, isActive, onClick }: ScrambleLinkProps) => {
           "text-gray-500 font-normal": !isActive
         }
       )}
-      style={{ writingMode: 'vertical-rl', textOrientation: 'upright' }}
       onClick={onClick}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
@@ -104,31 +103,33 @@ export default function Header() {
   const { activeLink, setActiveLink, setLastTimeClick } = useActiveLinkContext();
 
   return (
-    <header className="z-[999] relative h-full flex items-center">
-      <nav className="flex flex-col gap-2 items-center">
-        <ul className="flex flex-col items-center justify-center text-[0.7rem] font-medium text-gray-500 gap-2">
+    <header className="z-[999] relative h-auto md:h-full flex items-center justify-center">
+      <nav className="flex flex-row md:flex-col gap-4 md:gap-2 items-center bg-black/50 md:bg-transparent px-4 py-2 md:p-0 rounded-full md:rounded-none backdrop-blur-md md:backdrop-blur-none md:border-none">
+        <ul className="flex flex-row md:flex-col items-center justify-center text-[0.7rem] font-medium text-gray-500 gap-4 md:gap-2">
           {links.map((link, index) => (
             <React.Fragment key={link.hash}>
               <motion.li
                 className="relative flex items-center"
-                initial={{ x: -100, opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
                 transition={{ delay: index * 0.1 }}
               >
-                <ScrambleLink 
-                    text={link.name} 
-                    isActive={activeLink === link.name}
-                    onClick={() => {
-                        setActiveLink(link.name);
-                        setLastTimeClick(Date.now());
-                    }}
-                />
+                <div className="md:[writing-mode:vertical-rl] md:[text-orientation:upright]">
+                    <ScrambleLink 
+                        text={link.name} 
+                        isActive={activeLink === link.name}
+                        onClick={() => {
+                            setActiveLink(link.name);
+                            setLastTimeClick(Date.now());
+                        }}
+                    />
+                </div>
               </motion.li>
               {index < links.length - 1 && (
                 <motion.span
                     initial={{ opacity: 0 }}
                     animate={{ opacity: 1 }}
-                    className="text-gray-800 h-[1px] w-3 bg-gray-800"
+                    className="hidden md:block text-gray-800 h-[1px] w-3 bg-gray-800"
                 ></motion.span>
               )}
             </React.Fragment>
