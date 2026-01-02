@@ -9,10 +9,10 @@ import Image from "next/image";
 
 export default function Projects() {
   return (
-    <section id="projects" className="w-full h-full flex flex-col justify-center">
+    <section id="projects" className="w-full h-full flex flex-col justify-start md:justify-center pt-4 md:pt-0">
       <SectionHeading>Selected Works</SectionHeading>
       
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-10 mt-8">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-12 sm:gap-y-10 mt-4 sm:mt-8 pb-32 sm:pb-0">
         {projectsData.map((project, index) => (
           <React.Fragment key={index}>
             <Project {...project} index={index} />
