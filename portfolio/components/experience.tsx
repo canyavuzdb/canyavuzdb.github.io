@@ -5,9 +5,9 @@ import SectionHeading from "./section-heading";
 import { experiencesData } from "@/lib/data";
 export default function Experience() {
   return (
-    <section id="experience" className="scroll-mt-28 w-full max-w-[45rem]">
+    <section id="experience" className="scroll-mt-28 w-full max-w-[45rem] flex flex-col justify-start md:justify-center h-auto md:h-full pt-4 md:pt-0 pb-24 md:pb-0">
       <SectionHeading>Experience</SectionHeading>
-      <div className="flex flex-col gap-10">
+      <div className="flex flex-col gap-10 mt-4 md:mt-0">
         {experiencesData.map((item, index) => (
           <div key={index} className="flex flex-col border-l-2 border-white/10 pl-6 relative">
              <div className="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-black border-2 border-white/50"></div>
