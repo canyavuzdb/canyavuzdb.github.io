@@ -28,10 +28,29 @@ export default function About() {
           I&apos;ve spent the last few years building SaaS products and business tools for real operational needs. I enjoy the balance between making something work today and making sure it can keep working tomorrow.
         </p>
         <p>
-          I&apos;m always learning in parallel — trying new tools, revisiting familiar ones, and building small things simply to see what I can learn from them.
+          I&apos;m always learning in parallel — trying new tools, revisiting familiar ones, and building small things simply to see what I can learn from them. Some of that work lives on{" "}
+          <a
+            href="https://github.com/canyavuzdb"
+            target="_blank"
+            rel="noreferrer"
+            className="border-b border-current text-white transition-opacity hover:opacity-70"
+          >
+            GitHub
+          </a>
+          {" "}and I keep my professional profile on{" "}
+          <a
+            href="https://www.linkedin.com/in/mcy96/"
+            target="_blank"
+            rel="noreferrer"
+            className="border-b border-current text-white transition-opacity hover:opacity-70"
+          >
+            LinkedIn
+          </a>
+          .
         </p>
-        <p className="pt-2 text-sm italic tracking-normal text-white/50">
+        <p className="way-easter-egg pt-2 text-sm italic tracking-normal text-white/50">
           This is the way.
+          <span className="lightsaber" aria-hidden="true"><span /></span>
         </p>
       </div>
     </section>
