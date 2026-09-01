@@ -6,6 +6,8 @@ type Theme = "night" | "day";
 
 const applyTheme = (theme: Theme) => {
   document.documentElement.dataset.theme = theme;
+  const favicon = document.querySelector<HTMLLinkElement>("#theme-favicon");
+  favicon?.setAttribute("href", theme === "day" ? "/favicon-dark.svg" : "/favicon-light.svg");
 };
 
 export default function ThemeToggle() {

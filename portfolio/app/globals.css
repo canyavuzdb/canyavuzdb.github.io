@@ -5,6 +5,7 @@
 html, body {
   background-color: #040508;
   color: white; 
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
   transition: background-color 760ms ease, color 560ms ease;
 }
 
