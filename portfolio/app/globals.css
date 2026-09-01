@@ -3,43 +3,278 @@
 @tailwind utilities;
 
 html, body {
-  --line-color: #333;
-  overflow: hidden;
-  height: 100vh;
-  width: 100vw;
-  background-color: #000000;
+  background-color: #040508;
   color: white; 
+  transition: background-color 760ms ease, color 560ms ease;
 }
 
-/* Main Background Graphic */
-.geometric-shape {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  width: 90vw;
-  height: 90vh;
-  max-width: 65rem;
-  max-height: 65rem;
-  background-image: url('/final-shape.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  /* Almost fully grey (90%), lower opacity (0.3) for blending */
-  filter: grayscale(90%) opacity(0.3) brightness(0.8);
-  z-index: 0;
+html[data-theme="day"] body {
+  background-color: #f4f3ee;
+  color: #1f1e1a;
 }
 
-
-a,
+a[href],
 button,
 [role="button"],
 input[type="submit"],
 input[type="reset"],
 input[type="button"] {
-  cursor: none !important;
+  cursor: pointer;
 }
+
+.profile-card {
+  width: 4rem;
+  height: 4rem;
+  flex: none;
+  padding: 0;
+  border: 0;
+  border-radius: 9999px;
+  background: transparent;
+  perspective: 32rem;
+}
+
+.profile-card-inner {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 560ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.profile-card.is-flipped .profile-card-inner {
+  transform: rotateY(180deg);
+}
+
+.profile-card-face {
+  position: absolute;
+  inset: 0;
+  display: block;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 9999px;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.profile-card-back {
+  transform: rotateY(180deg);
+}
+
+.profile-card:focus-visible {
+  outline: 2px solid #d1a84f;
+  outline-offset: 3px;
+}
+
+.name-switch {
+  display: flex;
+  gap: 0.45rem;
+  align-items: baseline;
+  white-space: nowrap;
+}
+
+.name-switch-trigger {
+  display: inline-flex;
+  align-items: baseline;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  letter-spacing: inherit;
+}
+
+.name-switch-viewport {
+  display: inline-block;
+  height: 1.4em;
+  overflow: hidden;
+  vertical-align: bottom;
+}
+
+.name-switch-track {
+  display: flex;
+  flex-direction: column;
+  transition: transform 500ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.name-switch-row {
+  display: flex;
+  align-items: baseline;
+  height: 1.4em;
+}
+
+.name-switch-trigger:hover .name-switch-track,
+.name-switch-trigger:focus-visible .name-switch-track,
+.name-switch-track.is-switched {
+  transform: translateY(-1.4em);
+}
+
+.name-switch-trigger:focus-visible {
+  outline: 2px solid #d1a84f;
+  outline-offset: 3px;
+  border-radius: 0.125rem;
+}
+
+html[data-theme="day"] .profile-card-face {
+  border-color: rgba(36, 35, 31, 0.18);
+}
+
+.atmospheric-background {
+  --spotlight-x: 50vw;
+  --spotlight-y: 50vh;
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.scene-layer {
+  position: absolute;
+  inset: 0;
+  background-position: center;
+  background-size: cover;
+  transition: none;
+}
+
+.scene-layer--night {
+  background-image: linear-gradient(rgba(3, 4, 7, 0.97), rgba(3, 4, 7, 0.97)), url('/istanbul-dense-night.png');
+}
+
+.scene-layer--day {
+  background-image: linear-gradient(rgba(255, 255, 253, 0.94), rgba(255, 255, 253, 0.94)), url('/istanbul-dense-day.png');
+  background-position: calc(50% + 0.65vw) calc(50% + 0.32vh);
+  opacity: 0;
+}
+
+html[data-theme="day"] .scene-layer--day {
+  opacity: 1;
+}
+
+.scene-layer::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: inherit;
+  background-image: var(--scene-image);
+  background-position: center;
+  background-size: cover;
+  opacity: 0;
+  -webkit-mask-image: radial-gradient(circle 180px at var(--spotlight-x) var(--spotlight-y), #000 0%, rgba(0, 0, 0, 0.78) 26%, rgba(0, 0, 0, 0.48) 48%, rgba(0, 0, 0, 0.18) 69%, transparent 92%);
+  mask-image: radial-gradient(circle 180px at var(--spotlight-x) var(--spotlight-y), #000 0%, rgba(0, 0, 0, 0.78) 26%, rgba(0, 0, 0, 0.48) 48%, rgba(0, 0, 0, 0.18) 69%, transparent 92%);
+  transition: opacity 240ms ease;
+}
+
+.scene-layer--night::after {
+  --scene-image: url('/istanbul-dense-night.png');
+}
+
+.scene-layer--day::after {
+  --scene-image: url('/istanbul-dense-day.png');
+  background-position: calc(50% + 0.65vw) calc(50% + 0.32vh);
+}
+
+.atmospheric-background[data-active="true"] .scene-layer::after {
+  opacity: 0.52;
+}
+
+.atmospheric-background[data-active="true"][data-over-column="true"] .scene-layer::after {
+  opacity: 0.22;
+}
+
+.portfolio-column {
+  border-left: 1px solid rgba(255, 255, 255, 0.035);
+  border-right: 1px solid rgba(255, 255, 255, 0.035);
+  background: linear-gradient(90deg, rgba(3, 4, 7, 0.16), rgba(3, 4, 7, 0.42) 20%, rgba(3, 4, 7, 0.5) 50%, rgba(3, 4, 7, 0.42) 80%, rgba(3, 4, 7, 0.16));
+  box-shadow: none;
+  backdrop-filter: blur(3px);
+  transition: background 760ms ease, border-color 760ms ease;
+}
+
+html[data-theme="day"] .portfolio-column {
+  background: linear-gradient(90deg, rgba(255, 255, 253, 0.12), rgba(255, 255, 253, 0.38) 20%, rgba(255, 255, 253, 0.48) 50%, rgba(255, 255, 253, 0.38) 80%, rgba(255, 255, 253, 0.12));
+  border-color: rgba(40, 39, 35, 0.055);
+}
+
+html[data-theme="day"] .portfolio-column .text-white,
+html[data-theme="day"] .portfolio-column .text-white\/90 {
+  color: #24231f !important;
+}
+
+html[data-theme="day"] .portfolio-column .text-white\/80,
+html[data-theme="day"] .portfolio-column .text-gray-300 {
+  color: rgba(36, 35, 31, 0.8) !important;
+}
+
+html[data-theme="day"] .portfolio-column .text-white\/60,
+html[data-theme="day"] .portfolio-column .text-white\/55,
+html[data-theme="day"] .portfolio-column .text-gray-400 {
+  color: rgba(36, 35, 31, 0.62) !important;
+}
+
+html[data-theme="day"] .portfolio-column .text-white\/50,
+html[data-theme="day"] .portfolio-column .text-white\/40,
+html[data-theme="day"] .portfolio-column .text-gray-500 {
+  color: rgba(36, 35, 31, 0.48) !important;
+}
+
+html[data-theme="day"] .portfolio-column .border-white\/10,
+html[data-theme="day"] .portfolio-column .border-white\/20,
+html[data-theme="day"] .portfolio-column .border-white\/50 {
+  border-color: rgba(36, 35, 31, 0.16) !important;
+}
+
+html[data-theme="day"] .portfolio-column :is(h1, h2, h3, p, span, li, button, a) {
+  color: #1f1e1a;
+}
+
+html[data-theme="day"] .portfolio-column p,
+html[data-theme="day"] .portfolio-column span,
+html[data-theme="day"] .portfolio-column li {
+  color: rgba(31, 30, 26, 0.72);
+}
+
+html[data-theme="day"] .portfolio-column button:hover,
+html[data-theme="day"] .portfolio-column a:hover {
+  color: #1f1e1a;
+}
+
+.theme-toggle {
+  position: fixed;
+  z-index: 30;
+  width: 6rem;
+  height: 6rem;
+  transform: translate(-50%, -50%);
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  transition: left 420ms cubic-bezier(0.22, 1, 0.36, 1), top 420ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.theme-toggle:focus-visible {
+  outline: 2px solid #d1a84f;
+  outline-offset: 4px;
+  border-radius: 50%;
+}
+
+@media (max-width: 767px) {
+  .portfolio-column {
+    border: 0;
+    background: rgba(3, 3, 5, 0.58);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .scene-layer,
+  .scene-layer::after,
+  .portfolio-column,
+  .profile-card-inner,
+  .name-switch-track,
+  body {
+    transition: none;
+    animation: none;
+  }
+}
+
 
 @layer utilities {
   .no-scrollbar::-webkit-scrollbar {

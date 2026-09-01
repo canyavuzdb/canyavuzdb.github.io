@@ -1,12 +1,12 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { DM_Sans } from "next/font/google";
 import "./globals.css";
-import Link from "next/link";
-import Header from "@/components/header";
 import ActiveLinkContextProvider from "@/context/active-link-context";
+import AtmosphericBackground from "@/components/atmospheric-background";
+import ThemeToggle from "@/components/theme-toggle";
 
 
-const inter = Inter({ subsets: ["latin"] });
+const dmSans = DM_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "MCY | Personal Portfolio",
@@ -20,17 +20,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="!scroll-smooth">
+    <html lang="en" className="!scroll-smooth" data-theme="day">
       <body
-        className={`${inter.className} text-white relative h-screen w-full overflow-hidden flex flex-col items-center justify-center`}
+        className={`${dmSans.className} text-white relative min-h-screen w-full overflow-x-hidden`}
       >
         <ActiveLinkContextProvider>
-          <div className="geometric-shape"></div>
-          <div className="relative w-full max-w-[50rem] h-full flex flex-col justify-center z-10 box-border px-6 md:px-0">
-            {/* Header: Fixed Top on Mobile, Left Sidebar on Desktop */}
-            <div className="fixed top-6 left-1/2 -translate-x-1/2 z-50 md:absolute md:right-[100%] md:top-0 md:h-full md:flex md:items-center md:pr-6 md:bottom-auto md:left-auto md:translate-x-0">
-                <Header />
-            </div>
+          <AtmosphericBackground />
+          <ThemeToggle />
+          <div className="portfolio-column relative z-10 mx-auto flex min-h-screen w-full max-w-[43rem] flex-col justify-center px-6 md:px-10">
             {children}
           </div>
         </ActiveLinkContextProvider>
