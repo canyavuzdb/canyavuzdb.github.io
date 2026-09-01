@@ -5,7 +5,6 @@ import Blog from "@/components/blog";
 import Thoughts from "@/components/thoughts";
 import Projects from "@/components/projects";
 import Experience from "@/components/experience";
-import HomeIntro from "@/components/home-intro";
 
 import { useActiveLinkContext } from "@/context/active-link-context";
 import { motion, AnimatePresence } from "framer-motion";
@@ -14,7 +13,7 @@ export default function Home() {
   const { activeLink } = useActiveLinkContext();
 
   return (
-    <main className="min-h-screen text-white relative flex w-full flex-col items-center justify-center py-16 md:py-12">
+    <main className="min-h-screen text-white relative flex w-full flex-col items-center justify-start py-20 md:py-24">
         <AnimatePresence mode="wait">
             <motion.div
                 key={activeLink}
@@ -22,10 +21,9 @@ export default function Home() {
                 animate={{ opacity: 1, scale: 1, filter: "blur(0px)" }}
                 exit={{ opacity: 0, scale: 1.02, filter: "blur(10px)" }}
                 transition={{ duration: 0.4, ease: "easeInOut" }}
-                className="w-full flex-none flex flex-col items-center justify-center text-center custom-scrollbar"
+                className="w-full flex-none custom-scrollbar"
             >
                 {activeLink === "About" && <About />}
-                {activeLink === "Home" && <HomeIntro />}
                 {activeLink === "Blog" && <Blog />}
                 {activeLink === "Thoughts" && <Thoughts />}
                 {activeLink === "Work" && <Experience />}
