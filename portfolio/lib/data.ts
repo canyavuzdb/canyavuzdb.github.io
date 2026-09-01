@@ -1,12 +1,11 @@
 import React from "react";
 import { IconType } from "react-icons";
 import {
-  AiOutlineHome,
   AiOutlineUser,
   AiOutlineProject,
-  AiOutlineTool,
   AiOutlineHistory,
-  AiOutlineMessage,
+  AiOutlineFileText,
+  AiOutlineBulb,
 } from "react-icons/ai";
 import { CgWorkAlt } from "react-icons/cg";
 import jamImg from "@/public/jam.png";
@@ -14,35 +13,29 @@ import webautoImg from "@/public/webautomation.png";
 
 export const links = [
   {
-    name: "Home",
-    hash: "#home",
-    icon: AiOutlineHome,
-  },
-  {
     name: "About",
     hash: "#about",
     icon: AiOutlineUser,
   },
   {
+    name: "Blog",
+    hash: "#blog",
+    icon: AiOutlineFileText,
+  },
+  {
+    name: "Thoughts",
+    hash: "#thoughts",
+    icon: AiOutlineBulb,
+  },
+  {
+    name: "Work",
+    hash: "#work",
+    icon: AiOutlineHistory,
+  },
+  {
     name: "Projects",
     hash: "#projects",
     icon: AiOutlineProject,
-  },
-  {
-    name: "Skills",
-    hash: "#skills",
-    icon: AiOutlineTool,
-  },
-  {
-    name: "Experience",
-    hash: "#experience",
-    icon: AiOutlineHistory,
-  },
-
-  {
-    name: "Contact",
-    hash: "#contact",
-    icon: AiOutlineMessage,
   },
 ] as const;
 

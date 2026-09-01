@@ -3,10 +3,12 @@
 import React from "react";
 import SectionHeading from "./section-heading";
 import { experiencesData } from "@/lib/data";
+import { BackToOverview } from "./inline-navigation";
 export default function Experience() {
   return (
-    <section id="experience" className="scroll-mt-28 w-full max-w-[45rem] flex flex-col justify-start md:justify-center h-auto md:h-full pt-4 md:pt-0 pb-24 md:pb-0">
-      <SectionHeading>Experience</SectionHeading>
+    <section id="work" className="scroll-mt-28 w-full max-w-[45rem] flex flex-col justify-start md:justify-center h-auto md:h-full pt-4 md:pt-0 pb-24 md:pb-0">
+      <BackToOverview />
+      <SectionHeading>Work</SectionHeading>
       <div className="flex flex-col gap-10 mt-4 md:mt-0">
         {experiencesData.map((item, index) => (
           <div key={index} className="flex flex-col border-l-2 border-white/10 pl-6 relative">

@@ -6,10 +6,12 @@ import { projectsData } from "@/lib/data";
 import { motion } from "framer-motion";
 import { BsGithub, BsArrowUpRight } from "react-icons/bs";
 import Image from "next/image";
+import { BackToOverview } from "./inline-navigation";
 
 export default function Projects() {
   return (
     <section id="projects" className="w-full h-full flex flex-col justify-start md:justify-center pt-4 md:pt-0">
+      <BackToOverview />
       <SectionHeading>Selected Works</SectionHeading>
       
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-12 sm:gap-y-10 mt-4 sm:mt-8 pb-32 sm:pb-0">
@@ -62,7 +64,6 @@ function Project({ title, description, tags, index }: ProjectProps) {
       
       <div 
         className="absolute inset-0 z-10" 
-        data-cursor="hover"
       />
     </motion.div>
   );
