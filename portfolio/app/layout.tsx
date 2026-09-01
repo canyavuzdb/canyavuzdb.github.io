@@ -6,9 +6,9 @@ import ThemeToggle from "@/components/theme-toggle";
 
 
 export const metadata: Metadata = {
-  title: "MCY | Personal Portfolio",
+  title: "Can Yavuz | Full Stack Developer",
   description:
-    "MCY is a full stack software developer with +1 years of real time experience.",
+    "Can Yavuz is a full stack software developer with +1 years of real time experience.",
 };
 
 export default function RootLayout({
