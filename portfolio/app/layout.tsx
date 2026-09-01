@@ -27,7 +27,7 @@ export default function RootLayout({
         <ActiveLinkContextProvider>
           <AtmosphericBackground />
           <ThemeToggle />
-          <div className="portfolio-column relative z-10 mx-auto flex min-h-screen w-full max-w-[43rem] flex-col justify-center px-6 md:px-10">
+          <div className="portfolio-column relative z-10 mx-auto flex min-h-screen w-full max-w-[50rem] flex-col justify-center px-6 md:px-12">
             {children}
           </div>
         </ActiveLinkContextProvider>

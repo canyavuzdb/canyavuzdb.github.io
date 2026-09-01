@@ -4,11 +4,11 @@ import ProfileCard from "./profile-card";
 
 export default function HomeIntro() {
   return (
-    <section className="w-full max-w-[31rem] text-left">
+    <section className="w-full max-w-[42rem] text-left">
       <div className="mb-8 flex items-center gap-4">
         <ProfileCard />
         <div>
-          <p className="text-base text-white/55">Hello, I&apos;m</p>
+          <p className="text-base text-white/55">Merhaba, ben</p>
           <NameSwitch />
         </div>
       </div>
