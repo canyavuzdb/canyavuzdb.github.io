@@ -1,5 +1,14 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Supabase content setup
+
+Blog and Thoughts will read from `posts`; Work from `experiences`; Projects from `projects`.
+
+1. Run [`supabase/migrations/20260902000000_create_portfolio_content.sql`](./supabase/migrations/20260902000000_create_portfolio_content.sql) in Supabase SQL Editor.
+2. Run [`supabase/seed.sql`](./supabase/seed.sql) to add the initial sample records.
+3. Create a local `.env.local` file, then add the project URL and **publishable** key. Never use a secret or service-role key in the application.
+4. Add the same variables in Vercel for Production (and Preview if needed) before deployment.
+
 ## Getting Started
 
 First, run the development server:

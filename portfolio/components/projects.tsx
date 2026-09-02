@@ -2,20 +2,19 @@
 
 import React from "react";
 import SectionHeading from "./section-heading";
-import { projectsData } from "@/lib/data";
 import { motion } from "framer-motion";
-import { BsGithub, BsArrowUpRight } from "react-icons/bs";
-import Image from "next/image";
 import { BackToOverview } from "./inline-navigation";
+import { useProjects } from "@/lib/use-content";
 
 export default function Projects() {
+  const projects = useProjects();
   return (
     <section id="projects" className="w-full h-full flex flex-col justify-start md:justify-center pt-4 md:pt-0">
       <BackToOverview />
       <SectionHeading>Selected Works</SectionHeading>
       
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-12 sm:gap-y-10 mt-4 sm:mt-8 pb-32 sm:pb-0">
-        {projectsData.map((project, index) => (
+        {projects.map((project, index) => (
           <React.Fragment key={index}>
             <Project {...project} index={index} />
           </React.Fragment>
@@ -25,9 +24,9 @@ export default function Projects() {
   );
 }
 
-type ProjectProps = (typeof projectsData)[number] & { index: number };
+type ProjectProps = ReturnType<typeof useProjects>[number] & { index: number };
 
-function Project({ title, description, tags, index }: ProjectProps) {
+function Project({ title, summary, technologies, status, index }: ProjectProps) {
   return (
     <motion.div
       initial={{ opacity: 0, scale: 0.9 }}
@@ -48,11 +47,11 @@ function Project({ title, description, tags, index }: ProjectProps) {
       </div>
 
       <p className="text-white/60 text-xs leading-5 mb-4 font-light min-h-[5rem]">
-        {description}
+        {summary}
       </p>
 
       <ul className="flex flex-wrap gap-1.5 mt-auto">
-        {tags.map((tag, index) => (
+        {technologies.map((tag, index) => (
           <li
             key={index}
             className="px-2 py-0.5 text-[0.6rem] uppercase tracking-wider text-white/80 border border-white/10 rounded hover:bg-white hover:text-black transition-all"
@@ -61,10 +60,9 @@ function Project({ title, description, tags, index }: ProjectProps) {
           </li>
         ))}
       </ul>
+      <p className="mt-4 text-[0.6rem] font-mono uppercase tracking-[0.14em] text-white/40">{status.replaceAll("_", " ")}</p>
       
-      <div 
-        className="absolute inset-0 z-10" 
-      />
+      <div className="absolute inset-0 z-10" />
     </motion.div>
   );
 }
