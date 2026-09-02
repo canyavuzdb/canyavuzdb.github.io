@@ -328,6 +328,46 @@ html[data-theme="day"] .portfolio-column :is(.blog-post-divider, .soft-divider) 
   border-color: rgba(31, 30, 26, 0.07) !important;
 }
 
+.code-comment {
+  color: rgba(255, 255, 255, 0.46);
+}
+
+.code-line {
+  color: rgba(255, 255, 255, 0.88);
+}
+
+.thought-entry-date {
+  color: rgba(255, 255, 255, 0.58);
+}
+
+.pin-control {
+  color: rgba(255, 255, 255, 0.42);
+}
+
+.pin-control[aria-pressed="true"] {
+  color: rgba(255, 255, 255, 0.92);
+}
+
+html[data-theme="day"] .portfolio-column .code-comment {
+  color: rgba(31, 30, 26, 0.48) !important;
+}
+
+html[data-theme="day"] .portfolio-column .code-line {
+  color: rgba(31, 30, 26, 0.86) !important;
+}
+
+html[data-theme="day"] .portfolio-column .thought-entry-date {
+  color: rgba(31, 30, 26, 0.46) !important;
+}
+
+html[data-theme="day"] .portfolio-column .pin-control {
+  color: rgba(31, 30, 26, 0.4) !important;
+}
+
+html[data-theme="day"] .portfolio-column .pin-control[aria-pressed="true"] {
+  color: rgba(31, 30, 26, 0.9) !important;
+}
+
 html[data-theme="day"] .portfolio-column button:hover,
 html[data-theme="day"] .portfolio-column a:hover {
   color: #1f1e1a;
