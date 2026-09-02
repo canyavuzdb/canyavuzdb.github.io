@@ -6,6 +6,7 @@ export type ContentBlock =
   | { type: "paragraph"; text: string }
   | { type: "code"; language?: string; code: string }
   | { type: "image"; path: string; alt: string; caption?: string }
+  | { type: "link"; url: string; label: string }
   | { type: "link_card"; url: string; title: string; description?: string }
   | { type: "tweet_header"; author_name: string; handle: string; text: string };
 
@@ -18,8 +19,15 @@ export type Post = {
   content_blocks: ContentBlock[];
   cover_image_path: string | null;
   tags: string[];
+  category: "build" | "read" | "think" | null;
   view_count: number;
   published_at: string | null;
+  created_at: string;
+};
+
+export type PostPage = {
+  posts: Post[];
+  totalPages: number;
 };
 
 export type Project = {
@@ -58,8 +66,10 @@ const fallbackPosts: Post[] = [
     ],
     cover_image_path: null,
     tags: ["architecture", "craft"],
+    category: null,
     view_count: 0,
     published_at: new Date().toISOString(),
+    created_at: new Date().toISOString(),
   },
   {
     id: 2,
@@ -70,8 +80,10 @@ const fallbackPosts: Post[] = [
     content_blocks: [{ type: "paragraph", text: "The best interface is often the one that lets someone finish their work without noticing the interface at all." }],
     cover_image_path: null,
     tags: ["product", "craft"],
+    category: "think",
     view_count: 0,
     published_at: new Date().toISOString(),
+    created_at: new Date().toISOString(),
   },
 ];
 
@@ -91,9 +103,32 @@ function parseBlocks(value: Json): ContentBlock[] {
 
 export async function getPosts(type: Post["type"]) {
   if (!supabase) return fallbackPosts.filter((post) => post.type === type);
-  const { data, error } = await supabase.from("posts").select("id,type,title,slug,summary,content_blocks,cover_image_path,tags,view_count,published_at").eq("type", type).eq("is_published", true).order("published_at", { ascending: false });
+  const { data, error } = await supabase.from("posts").select("id,type,title,slug,summary,content_blocks,cover_image_path,tags,category,view_count,published_at,created_at").eq("type", type).eq("is_published", true).order("published_at", { ascending: false });
   if (error || !data) return fallbackPosts.filter((post) => post.type === type);
   return data.map((post) => ({ ...post, type: post.type as Post["type"], content_blocks: parseBlocks(post.content_blocks), tags: post.tags ?? [] })) as Post[];
+}
+
+export async function getPostsPage(type: Post["type"], page: number, pageSize = 10): Promise<PostPage> {
+  const fallback = fallbackPosts.filter((post) => post.type === type);
+  if (!supabase) {
+    return { posts: fallback.slice((page - 1) * pageSize, page * pageSize), totalPages: Math.max(1, Math.ceil(fallback.length / pageSize)) };
+  }
+
+  const from = (page - 1) * pageSize;
+  const { data, error, count } = await supabase
+    .from("posts")
+    .select("id,type,title,slug,summary,content_blocks,cover_image_path,tags,category,view_count,published_at,created_at", { count: "exact" })
+    .eq("type", type)
+    .eq("is_published", true)
+    .order("published_at", { ascending: false })
+    .order("id", { ascending: false })
+    .range(from, from + pageSize - 1);
+
+  if (error || !data) return { posts: fallback.slice(from, from + pageSize), totalPages: Math.max(1, Math.ceil(fallback.length / pageSize)) };
+  return {
+    posts: data.map((post) => ({ ...post, type: post.type as Post["type"], content_blocks: parseBlocks(post.content_blocks), tags: post.tags ?? [] })) as Post[],
+    totalPages: Math.max(1, Math.ceil((count ?? 0) / pageSize)),
+  };
 }
 
 export async function getProjects() {
