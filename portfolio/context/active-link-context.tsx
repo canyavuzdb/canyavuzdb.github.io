@@ -17,7 +17,7 @@ type ActiveLinkContextType = {
   createContext<ActiveLinkContextType | null>(null);
 
 export default function ActiveLinkContextProvider({children}: ActiveLinkContextProviderProps) {
-    const [activeLink, setActiveLink] = useState<SectionLink>("Home");
+    const [activeLink, setActiveLink] = useState<SectionLink>("About");
     const [LastTimeClick, setLastTimeClick]=useState(0);
   return <ActiveLinkContext.Provider value={
     {

@@ -1,32 +1,62 @@
 "use client";
 
 import React from "react";
-import SectionHeading from "./section-heading";
-import { motion } from "framer-motion";
-export default function About() {
+import InlineNavigation from "./inline-navigation";
+import NameSwitch from "./name-switch";
+import ProfileCard from "./profile-card";
+import { AnimatePresence, motion } from "framer-motion";
+
+type AboutProps = {
+  children?: React.ReactNode;
+  contentKey: string;
+};
+
+export default function About({ children, contentKey }: AboutProps) {
   return (
-    <section
-      className="max-w-[45rem] text-center leading-8 scroll-mt-28"
-      id="about"
-    >
-      <SectionHeading>About Me</SectionHeading>
-      <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
-        transition={{ duration: 1 }}
-        viewport={{ once: true }}
-        className="text-white/80 font-light text-lg space-y-6 text-justify"
-      >
-        <p>
-          When I was 5 years old, I had an Atari and played games. When I was 8, I had a computer and was constantly breaking it to understand how it worked. My story is very long, but the main point is that the time I spend with computers is a way of life for me.
-        </p>
-        <p>
-          Even when I wake up in the morning and eat my avocado toast, I'm actually coding. Whether I'm drinking my long-brewed American coffee at work or eating dinner when I get home in the evening, developing something is always the only real thing for me.
-        </p>
-        <p>
-          Alongside this, I have a social life, a sports life, and an obsession with healthy eating that I never neglect. The healthier I am psychologically, the healthier the products I develop are. If you've read this far, thank you for putting up with this strange text about me.
-        </p>
-      </motion.div>
+    <section className="w-full max-w-[44rem] text-left leading-8 scroll-mt-28" id="about">
+      <header className="mb-8">
+        <div className="mb-10 flex items-center gap-4">
+          <ProfileCard />
+          <div>
+            <p className="text-base text-white/55">Hello, I&apos;m</p>
+            <NameSwitch />
+            <p className="-mt-2 text-sm font-light text-white/50">Full-stack developer · Istanbul</p>
+          </div>
+        </div>
+        <InlineNavigation />
+      </header>
+      <hr className="soft-divider mx-auto w-[calc(100%-2px)] max-w-[42.875rem]" />
+      <AnimatePresence mode="wait">
+        <motion.div
+          key={contentKey}
+          initial={{ opacity: 0, y: 10, filter: "blur(4px)" }}
+          animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
+          exit={{ opacity: 0, y: -6, filter: "blur(3px)" }}
+          transition={{ duration: 0.26, ease: "easeOut" }}
+          className="mt-7"
+        >
+          {children ?? (
+            <div className="max-w-[43rem] space-y-7 text-[0.9375rem] leading-7 tracking-[-0.01em] text-white/75 sm:text-base sm:leading-7">
+              <p>
+                I&apos;m drawn to the part of software development where a vague problem slowly becomes something people can use every day. That usually means moving between product decisions, interfaces, data, and the details that make a system feel dependable.
+              </p>
+              <p>
+                I&apos;ve spent the last few years building SaaS products and business tools for real operational needs. I enjoy the balance between making something work today and making sure it can keep working tomorrow.
+              </p>
+              <p>
+                I&apos;m always learning in parallel — trying new tools, revisiting familiar ones, and building small things simply to see what I can learn from them. Some of that work lives on{" "}
+                <a href="https://github.com/canyavuzdb" target="_blank" rel="noreferrer" className="border-b border-current text-white transition-opacity hover:opacity-70">GitHub</a>
+                {" "}and I keep my professional profile on{" "}
+                <a href="https://www.linkedin.com/in/mcy96/" target="_blank" rel="noreferrer" className="border-b border-current text-white transition-opacity hover:opacity-70">LinkedIn</a>.
+              </p>
+              <p className="way-easter-egg pt-2 text-sm italic tracking-normal text-white/50">
+                This is the way.
+                <span className="lightsaber" aria-hidden="true"><span /></span>
+              </p>
+            </div>
+          )}
+        </motion.div>
+      </AnimatePresence>
     </section>
   );
 }

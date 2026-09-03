@@ -50,10 +50,10 @@ export default function Intro() {
         animate={{ opacity: 1 }}
         transition={{ delay: 0.4 }}
       >
-        <a href="https://github.com/canyavuzdb" target="_blank" className="hover:text-white transition" data-cursor="hover transparent"><BsGithub/></a>
-        <a href="https://github.com/mcyithinkso" target="_blank" className="hover:text-white transition" data-cursor="hover transparent"><BsGithub/></a>
-        <a href="https://www.linkedin.com/in/mcy96/" target="_blank" className="hover:text-white transition" data-cursor="hover transparent"><BsLinkedin/></a>
-        <a href="/Mehmet%20Can%20Yavuz%20CV.pdf" target="_blank" className="hover:text-white transition" title="CV" data-cursor="hover transparent"><HiDownload/></a>
+        <a href="https://github.com/canyavuzdb" target="_blank" className="hover:text-white transition"><BsGithub/></a>
+        <a href="https://github.com/mcyithinkso" target="_blank" className="hover:text-white transition"><BsGithub/></a>
+        <a href="https://www.linkedin.com/in/mcy96/" target="_blank" className="hover:text-white transition"><BsLinkedin/></a>
+        <a href="/Mehmet%20Can%20Yavuz%20CV.pdf" target="_blank" className="hover:text-white transition" title="CV"><HiDownload/></a>
       </motion.div>
     </section>
   );

@@ -91,7 +91,6 @@ const ScrambleLink = ({ text, isActive, onClick }: ScrambleLinkProps) => {
       onClick={onClick}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      data-cursor="transparent"
     >
       {displayText}
     </button>
