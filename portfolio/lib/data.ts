@@ -13,26 +13,31 @@ import webautoImg from "@/public/webautomation.png";
 export const links = [
   {
     name: "About",
+    href: "/about",
     hash: "#about",
     icon: AiOutlineUser,
   },
   {
     name: "Blog",
+    href: "/blog",
     hash: "#blog",
     icon: AiOutlineFileText,
   },
   {
     name: "Thoughts",
+    href: "/thoughts",
     hash: "#thoughts",
     icon: AiOutlineBulb,
   },
   {
     name: "Work",
+    href: "/work",
     hash: "#work",
     icon: AiOutlineHistory,
   },
   {
     name: "Projects",
+    href: "/projects",
     hash: "#projects",
     icon: AiOutlineProject,
   },

@@ -1,7 +1,16 @@
 "use client";
 
-import { useActiveLinkContext } from "@/context/active-link-context";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import type { SectionLink } from "@/lib/types";
+
+const sectionPaths: Record<SectionLink, string> = {
+  About: "/about",
+  Blog: "/blog",
+  Thoughts: "/thoughts",
+  Work: "/work",
+  Projects: "/projects",
+};
 
 type NavItemProps = {
   label: SectionLink;
@@ -9,16 +18,12 @@ type NavItemProps = {
 };
 
 function NavItem({ label, index }: NavItemProps) {
-  const { activeLink, setActiveLink, setLastTimeClick } = useActiveLinkContext();
-  const isActive = activeLink === label;
+  const pathname = usePathname();
+  const isActive = pathname === sectionPaths[label];
 
   return (
-    <button
-      type="button"
-      onClick={() => {
-        setActiveLink(label);
-        setLastTimeClick(Date.now());
-      }}
+    <Link
+      href={sectionPaths[label]}
       className={`border-b transition-colors ${
         isActive
           ? "border-current text-white"
@@ -28,7 +33,7 @@ function NavItem({ label, index }: NavItemProps) {
     >
       <span>{label}</span>
       <sup className="ml-1 text-[0.62em] font-medium opacity-60">{index}</sup>
-    </button>
+    </Link>
   );
 }
 
@@ -43,18 +48,12 @@ export default function InlineNavigation() {
 }
 
 export function BackToOverview() {
-  const { setActiveLink, setLastTimeClick } = useActiveLinkContext();
-
   return (
-    <button
-      type="button"
-      onClick={() => {
-        setActiveLink("About");
-        setLastTimeClick(Date.now());
-      }}
+    <Link
+      href="/about"
       className="mb-7 border-b border-transparent text-sm text-white/55 transition-colors hover:border-current hover:text-white"
     >
       ← about
-    </button>
+    </Link>
   );
 }

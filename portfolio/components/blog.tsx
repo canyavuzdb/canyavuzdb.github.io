@@ -62,7 +62,6 @@ export default function Blog({ embedded = false }: { embedded?: boolean }) {
             <button type="button" onClick={() => setSelectedPost(null)} className="mb-7 border-b border-transparent text-sm text-white/45 transition-colors hover:border-current hover:text-white">
               ← all posts
             </button>
-            <PinButton pinned={isPinned(`blog:${selectedPost.id}`)} onToggle={() => togglePinned(`blog:${selectedPost.id}`)} />
             <h1 className="text-2xl font-medium leading-tight text-white sm:text-3xl">{selectedPost.title}</h1>
             <p className="mt-4 text-sm text-white/45">{selectedPost.published_at && new Intl.DateTimeFormat("en", { month: "long", day: "numeric", year: "numeric" }).format(new Date(selectedPost.published_at))} · {estimateReadingMinutes(selectedPost.content_blocks)} min read · {viewCounts[selectedPost.id] ?? selectedPost.view_count} views</p>
             <div className="mt-10"><ContentBlocks blocks={selectedPost.content_blocks} /></div>
