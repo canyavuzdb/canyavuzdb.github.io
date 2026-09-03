@@ -14,6 +14,14 @@ html[data-theme="day"] body {
   color: #1f1e1a;
 }
 
+.project-contribution {
+  background-color: #17181c;
+}
+
+html[data-theme="day"] .project-contribution {
+  background-color: #e5e4df;
+}
+
 .way-easter-egg {
   display: inline-flex;
   align-items: center;
