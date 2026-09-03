@@ -46,8 +46,7 @@ export default function AtmosphericBackground() {
 
   return (
     <div ref={backgroundRef} className="atmospheric-background" data-active="false" aria-hidden="true">
-      <div className="scene-layer scene-layer--night" />
-      <div className="scene-layer scene-layer--day" />
+      <div className="scene-layer" />
     </div>
   );
 }

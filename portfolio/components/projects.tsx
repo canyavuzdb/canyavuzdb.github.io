@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import Image from "next/image";
 import SectionHeading from "./section-heading";
 import { BackToOverview } from "./inline-navigation";
 import ContentBlocks from "./content-blocks";
@@ -35,11 +36,13 @@ function ProjectHeader({ project, detail = false }: { project: Project; detail?:
     const adjustment = projectCoverAdjustments[project.slug] ?? { scale: 1 };
 
     return (
-      <div className="aspect-video w-full overflow-hidden bg-[#f3eee4]">
-        <img
+      <div className="relative aspect-video w-full overflow-hidden bg-[#f3eee4]">
+        <Image
           src={project.cover_image_path}
           alt={`${project.title} project cover`}
-          className="block size-full object-cover transition-transform duration-500"
+          fill
+          sizes={detail ? "(min-width: 1024px) 928px, 100vw" : "(min-width: 640px) 520px, 100vw"}
+          className="object-cover transition-transform duration-500"
           style={{ objectPosition: adjustment.position, transform: `scale(${adjustment.scale})` }}
         />
       </div>

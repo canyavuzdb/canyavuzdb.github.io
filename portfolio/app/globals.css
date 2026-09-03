@@ -214,6 +214,8 @@ html[data-theme="day"] .profile-card-face {
 }
 
 .atmospheric-background {
+  --scene-background: linear-gradient(rgba(3, 4, 7, 0.97), rgba(3, 4, 7, 0.97)), url('/istanbul-dense-night.png');
+  --scene-image: url('/istanbul-dense-night.png');
   --spotlight-x: 50vw;
   --spotlight-y: 50vh;
   position: fixed;
@@ -225,23 +227,15 @@ html[data-theme="day"] .profile-card-face {
 .scene-layer {
   position: absolute;
   inset: 0;
+  background-image: var(--scene-background);
   background-position: center;
   background-size: cover;
   transition: none;
 }
 
-.scene-layer--night {
-  background-image: linear-gradient(rgba(3, 4, 7, 0.97), rgba(3, 4, 7, 0.97)), url('/istanbul-dense-night.png');
-}
-
-.scene-layer--day {
-  background-image: linear-gradient(rgba(255, 255, 253, 0.94), rgba(255, 255, 253, 0.94)), url('/istanbul-dense-day.png');
-  background-position: calc(50% + 0.65vw) calc(50% + 0.32vh);
-  opacity: 0;
-}
-
-html[data-theme="day"] .scene-layer--day {
-  opacity: 1;
+html[data-theme="day"] .atmospheric-background {
+  --scene-background: linear-gradient(rgba(255, 255, 253, 0.94), rgba(255, 255, 253, 0.94)), url('/istanbul-dense-day.png');
+  --scene-image: url('/istanbul-dense-day.png');
 }
 
 .scene-layer::after {
@@ -258,12 +252,8 @@ html[data-theme="day"] .scene-layer--day {
   transition: opacity 240ms ease;
 }
 
-.scene-layer--night::after {
-  --scene-image: url('/istanbul-dense-night.png');
-}
-
-.scene-layer--day::after {
-  --scene-image: url('/istanbul-dense-day.png');
+html[data-theme="day"] .scene-layer,
+html[data-theme="day"] .scene-layer::after {
   background-position: calc(50% + 0.65vw) calc(50% + 0.32vh);
 }
 
