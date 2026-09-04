@@ -31,7 +31,7 @@ const projectCoverAdjustments: Record<string, { scale: number; position?: string
   "interview-memory": { scale: 1.08, position: "50% 54%" },
 };
 
-function ProjectHeader({ project, detail = false }: { project: Project; detail?: boolean }) {
+function ProjectHeader({ project, detail = false, priority = false }: { project: Project; detail?: boolean; priority?: boolean }) {
   if (project.cover_image_path) {
     const adjustment = projectCoverAdjustments[project.slug] ?? { scale: 1 };
 
@@ -41,7 +41,8 @@ function ProjectHeader({ project, detail = false }: { project: Project; detail?:
           src={project.cover_image_path}
           alt={`${project.title} project cover`}
           fill
-          sizes={detail ? "(min-width: 1024px) 928px, 100vw" : "(min-width: 640px) 520px, 100vw"}
+          priority={priority}
+          sizes="(min-width: 640px) 928px, 100vw"
           className="object-cover transition-transform duration-500"
           style={{ objectPosition: adjustment.position, transform: `scale(${adjustment.scale})` }}
         />
@@ -110,7 +111,7 @@ export default function Projects({ embedded = false }: { embedded?: boolean }) {
             <button type="button" onClick={() => setSelectedProject(null)} className="mb-7 border-b border-transparent text-sm text-white/45 transition-colors hover:border-current hover:text-white">
               ← all projects
             </button>
-            <ProjectHeader project={selectedProject} detail />
+            <ProjectHeader project={selectedProject} detail priority />
             <div className="mt-9 max-w-[45rem]">
               <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-[0.68rem] font-mono uppercase tracking-[0.12em] text-white/35">
                 <span>{selectedProject.visibility === "open_source" ? "open source" : "private work"}</span>
@@ -148,9 +149,9 @@ export default function Projects({ embedded = false }: { embedded?: boolean }) {
                   <p className="py-16 text-sm text-white/40">No {filterLabels[filter]} projects yet.</p>
                 ) : (
                   <div className="mt-10 grid auto-rows-min grid-cols-1 items-start gap-6 sm:grid-cols-2">
-                    {visibleProjects.map((project) => (
+                    {visibleProjects.map((project, index) => (
                       <button key={project.id} type="button" onClick={() => setSelectedProject(project)} className="group h-fit self-start overflow-hidden border border-white/10 text-left transition-colors hover:border-white/30">
-                        <ProjectHeader project={project} />
+                        <ProjectHeader project={project} priority={index < 4} />
                         <div className="p-5 sm:p-6">
                           <h3 className="text-lg font-medium text-white transition-opacity group-hover:opacity-70">{project.title}</h3>
                           <p className="mt-3 line-clamp-3 text-sm leading-6 text-white/55">{project.summary}</p>
