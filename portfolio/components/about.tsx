@@ -4,6 +4,7 @@ import React from "react";
 import InlineNavigation from "./inline-navigation";
 import NameSwitch from "./name-switch";
 import ProfileCard from "./profile-card";
+import IstanbulClock from "./istanbul-clock";
 import { AnimatePresence, motion } from "framer-motion";
 
 type AboutProps = {
@@ -20,7 +21,10 @@ export default function About({ children, contentKey }: AboutProps) {
           <div>
             <p className="text-base text-white/55">Hello, I&apos;m</p>
             <NameSwitch />
-            <p className="-mt-2 text-sm font-light text-white/50">Full-stack developer · Istanbul</p>
+            <p className="-mt-2 text-sm font-light text-white/50">
+              Full-stack developer ·{" "}
+              <span className="whitespace-nowrap">Istanbul · <IstanbulClock /></span>
+            </p>
           </div>
         </div>
         <InlineNavigation />
