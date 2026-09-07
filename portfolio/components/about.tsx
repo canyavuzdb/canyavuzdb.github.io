@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import GreetingSwitch from "./greeting-switch";
 import InlineNavigation from "./inline-navigation";
 import NameSwitch from "./name-switch";
 import ProfileCard from "./profile-card";
@@ -19,7 +20,7 @@ export default function About({ children, contentKey }: AboutProps) {
         <div className="mb-10 flex items-center gap-4">
           <ProfileCard />
           <div>
-            <p className="text-base text-white/55">Hello, I&apos;m</p>
+            <GreetingSwitch animate={contentKey === "About"} />
             <NameSwitch />
             <p className="-mt-2 text-sm font-light text-white/50">
               Full-stack developer ·{" "}
