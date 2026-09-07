@@ -13,12 +13,15 @@ export default function IstanbulClock() {
   const [time, setTime] = useState<string | null>(null);
 
   useEffect(() => {
-    const updateTime = () => setTime(formatter.format(new Date()));
+    let timeout: number;
+    const updateTime = () => {
+      setTime(formatter.format(new Date()));
+      timeout = window.setTimeout(updateTime, 60_000 - (Date.now() % 60_000));
+    };
 
     updateTime();
-    const interval = window.setInterval(updateTime, 1000);
 
-    return () => window.clearInterval(interval);
+    return () => window.clearTimeout(timeout);
   }, []);
 
   return (
