@@ -4,6 +4,19 @@ import { useCallback, useEffect, useState } from "react";
 
 type Theme = "night" | "day";
 
+const sceneMetrics = {
+  day: {
+    image: { width: 1668, height: 943 },
+    subject: { x: 1235, y: 103 },
+    offset: { x: 0.0065, y: 0.0032 },
+  },
+  night: {
+    image: { width: 1687, height: 932 },
+    subject: { x: 1235, y: 103 },
+    offset: { x: 0, y: 0 },
+  },
+} as const;
+
 const applyTheme = (theme: Theme) => {
   document.documentElement.dataset.theme = theme;
   const favicon = document.querySelector<HTMLLinkElement>("#theme-favicon");
@@ -15,15 +28,14 @@ export default function ThemeToggle() {
   const [position, setPosition] = useState({ x: -100, y: -100 });
 
   const updatePosition = useCallback((activeTheme: Theme) => {
-    const image = { width: 1672, height: 941 };
-    const subject = activeTheme === "day"
-      ? { x: 1235, y: 103 }
-      : { x: 1235, y: 103 };
+    const { image, subject, offset } = sceneMetrics[activeTheme];
     const scale = Math.max(window.innerWidth / image.width, window.innerHeight / image.height);
+    const renderedWidth = image.width * scale;
+    const renderedHeight = image.height * scale;
 
     setPosition({
-      x: (window.innerWidth - image.width * scale) / 2 + subject.x * scale,
-      y: (window.innerHeight - image.height * scale) / 2 + subject.y * scale,
+      x: (window.innerWidth - renderedWidth) / 2 + subject.x * scale + window.innerWidth * offset.x,
+      y: (window.innerHeight - renderedHeight) / 2 + subject.y * scale + window.innerHeight * offset.y,
     });
   }, []);
 
@@ -38,7 +50,12 @@ export default function ThemeToggle() {
       document.documentElement.dataset.theme === "day" ? "day" : "night"
     );
     window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
+    window.visualViewport?.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+      window.visualViewport?.removeEventListener("resize", handleResize);
+    };
   }, [updatePosition]);
 
   const toggleTheme = () => {
