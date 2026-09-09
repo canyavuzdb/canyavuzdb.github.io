@@ -30,6 +30,16 @@ function NavItem({ label, index }: NavItemProps) {
           : "border-transparent text-white/55 hover:border-current hover:text-white"
       }`}
       aria-current={isActive ? "page" : undefined}
+      onPointerEnter={(event) => {
+        const bounds = event.currentTarget.getBoundingClientRect();
+        window.dispatchEvent(new CustomEvent("portfolio:gaze-target", {
+          detail: {
+            x: bounds.left + bounds.width / 2,
+            y: bounds.top + bounds.height / 2,
+            navigationTarget: true,
+          },
+        }));
+      }}
     >
       <span>{label}</span>
       <sup className="ml-1 text-[0.62em] font-medium opacity-60">{index}</sup>
