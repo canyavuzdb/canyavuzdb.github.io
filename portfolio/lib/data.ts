@@ -5,6 +5,7 @@ import {
   AiOutlineHistory,
   AiOutlineFileText,
   AiOutlineBulb,
+  AiOutlineBook,
 } from "react-icons/ai";
 import { CgWorkAlt } from "react-icons/cg";
 import jamImg from "@/public/jam.png";
@@ -40,6 +41,12 @@ export const links = [
     href: "/projects",
     hash: "#projects",
     icon: AiOutlineProject,
+  },
+  {
+    name: "Bookmarks",
+    href: "/bookmarks",
+    hash: "#bookmarks",
+    icon: AiOutlineBook,
   },
 ] as const;
 

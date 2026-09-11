@@ -32,6 +32,19 @@ export type PostPage = {
   totalPages: number;
 };
 
+export type Bookmark = {
+  id: number;
+  url: string;
+  title: string;
+  description: string | null;
+  category: string;
+  tags: string[];
+  source: string | null;
+  is_featured: boolean;
+  published_at: string | null;
+  created_at: string;
+};
+
 export type Project = {
   id: number;
   slug: string;
@@ -98,6 +111,13 @@ const fallbackPosts: Post[] = [
     published_at: new Date().toISOString(),
     created_at: new Date().toISOString(),
   },
+];
+
+const fallbackBookmarks: Bookmark[] = [
+  { id: 1, url: "https://nextjs.org", title: "Next.js", description: "The React framework behind this portfolio.", category: "Developer tools", tags: ["react", "framework"], source: null, is_featured: true, published_at: null, created_at: "2026-09-11T00:00:00.000Z" },
+  { id: 2, url: "https://roadmap.sh", title: "roadmap.sh", description: "Clear learning paths for developers and product-minded builders.", category: "Skills & learning", tags: ["learning", "career"], source: null, is_featured: false, published_at: null, created_at: "2026-09-10T00:00:00.000Z" },
+  { id: 3, url: "https://www.smashingmagazine.com", title: "Smashing Magazine", description: "Practical writing on design, UX, and front-end craft.", category: "Reading", tags: ["design", "frontend"], source: null, is_featured: false, published_at: null, created_at: "2026-09-09T00:00:00.000Z" },
+  { id: 4, url: "https://www.figma.com", title: "Figma", description: "A collaborative workspace for interface and product design.", category: "Design", tags: ["design", "collaboration"], source: null, is_featured: false, published_at: null, created_at: "2026-09-08T00:00:00.000Z" },
 ];
 
 const fallbackProjects: Project[] = [
@@ -213,6 +233,21 @@ export async function getPosts(type: Post["type"]) {
   const { data, error } = await supabase.from("posts").select("id,type,title,slug,summary,content_blocks,cover_image_path,tags,category,view_count,published_at,created_at").eq("type", type).eq("is_published", true).order("published_at", { ascending: false });
   if (error || !data) return fallbackPosts.filter((post) => post.type === type);
   return data.map((post) => ({ ...post, type: post.type as Post["type"], content_blocks: parseBlocks(post.content_blocks), tags: post.tags ?? [] })) as Post[];
+}
+
+export async function getBookmarks() {
+  if (!supabase) return fallbackBookmarks;
+  const { data, error } = await supabase
+    .from("bookmarks")
+    .select("id,url,title,description,category,tags,source,is_featured,published_at,created_at")
+    .eq("is_published", true)
+    .order("is_featured", { ascending: false })
+    .order("published_at", { ascending: false })
+    .order("created_at", { ascending: false });
+
+  return error || !data
+    ? fallbackBookmarks
+    : data.map((bookmark) => ({ ...bookmark, tags: bookmark.tags ?? [] })) as Bookmark[];
 }
 
 export async function getPostsPage(type: Post["type"], page: number, pageSize = 10): Promise<PostPage> {

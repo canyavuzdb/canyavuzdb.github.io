@@ -14,6 +14,91 @@ html[data-theme="day"] body {
   color: #1f1e1a;
 }
 
+.bookmark-overlay {
+  background: rgba(0, 0, 0, 0.62);
+}
+
+.bookmark-modal {
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: #111217;
+  color: #f7f7f5;
+}
+
+.bookmark-modal-title,
+.bookmark-modal-label {
+  color: #f7f7f5;
+}
+
+.bookmark-modal-copy,
+.bookmark-modal-muted,
+.bookmark-modal-close {
+  color: rgba(247, 247, 245, 0.58);
+}
+
+.bookmark-modal-close:hover {
+  color: #f7f7f5;
+}
+
+.bookmark-modal-input {
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: rgba(255, 255, 255, 0.05);
+  color: #f7f7f5;
+}
+
+.bookmark-modal-input::placeholder {
+  color: rgba(247, 247, 245, 0.36);
+}
+
+.bookmark-modal-input:focus {
+  border-color: rgba(255, 255, 255, 0.68);
+}
+
+.bookmark-modal-submit {
+  background: #f7f7f5;
+  color: #111217;
+}
+
+html[data-theme="day"] .bookmark-overlay {
+  background: rgba(31, 30, 26, 0.32);
+}
+
+html[data-theme="day"] .bookmark-modal {
+  border-color: rgba(31, 30, 26, 0.18);
+  background: #fff;
+  color: #1f1e1a;
+}
+
+html[data-theme="day"] :is(.bookmark-modal-title, .bookmark-modal-label) {
+  color: #1f1e1a;
+}
+
+html[data-theme="day"] :is(.bookmark-modal-copy, .bookmark-modal-muted, .bookmark-modal-close) {
+  color: rgba(31, 30, 26, 0.62);
+}
+
+html[data-theme="day"] .bookmark-modal-close:hover {
+  color: #1f1e1a;
+}
+
+html[data-theme="day"] .bookmark-modal-input {
+  border-color: rgba(31, 30, 26, 0.24);
+  background: #fff;
+  color: #1f1e1a;
+}
+
+html[data-theme="day"] .bookmark-modal-input::placeholder {
+  color: rgba(31, 30, 26, 0.42);
+}
+
+html[data-theme="day"] .bookmark-modal-input:focus {
+  border-color: rgba(31, 30, 26, 0.72);
+}
+
+html[data-theme="day"] .bookmark-modal-submit {
+  background: #1f1e1a;
+  color: #fff;
+}
+
 .project-contribution {
   background-color: #17181c;
 }

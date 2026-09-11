@@ -1,9 +1,11 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { getExperiences, getPosts, getPostsPage, getProjects, type Experience, type Post, type PostPage, type Project } from "./content";
+import { getBookmarks, getExperiences, getPosts, getPostsPage, getProjects, type Bookmark, type Experience, type Post, type PostPage, type Project } from "./content";
 
 const postCache = new Map<Post["type"], Post[]>();
+let bookmarksCache: Bookmark[] | undefined;
+let bookmarksRequest: Promise<Bookmark[]> | undefined;
 const postRequests = new Map<Post["type"], Promise<Post[]>>();
 const postPageCache = new Map<string, PostPage>();
 const postPageRequests = new Map<string, Promise<PostPage>>();
@@ -21,6 +23,17 @@ export function preloadPosts(type: Post["type"]) {
     }).finally(() => postRequests.delete(type)));
   }
   return postRequests.get(type)!;
+}
+
+export function preloadBookmarks() {
+  if (!bookmarksRequest) {
+    bookmarksRequest = getBookmarks().then((bookmarks) => {
+      bookmarksCache = bookmarks;
+      return bookmarks;
+    });
+  }
+
+  return bookmarksRequest;
 }
 
 export function preloadPostsPage(type: Post["type"], page: number, pageSize = 10) {
@@ -67,6 +80,18 @@ export function usePosts(type: Post["type"]) {
   }, [type]);
 
   return posts;
+}
+
+export function useBookmarks() {
+  const [bookmarks, setBookmarks] = useState<Bookmark[]>(() => bookmarksCache ?? []);
+
+  useEffect(() => {
+    let active = true;
+    preloadBookmarks().then((result) => active && setBookmarks(result)).catch(() => undefined);
+    return () => { active = false; };
+  }, []);
+
+  return bookmarks;
 }
 
 export function usePostsPage(type: Post["type"], page: number, pageSize = 10) {
