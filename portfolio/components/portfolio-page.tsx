@@ -2,7 +2,7 @@
 
 import { useEffect } from "react";
 import About from "@/components/about";
-import { preloadExperiences, preloadPosts, preloadPostsPage, preloadProjects } from "@/lib/use-content";
+import { preloadBookmarks, preloadExperiences, preloadPosts, preloadPostsPage, preloadProjects } from "@/lib/use-content";
 import type { SectionLink } from "@/lib/types";
 
 type PortfolioPageProps = {
@@ -17,6 +17,7 @@ export default function PortfolioPage({ section, children }: PortfolioPageProps)
       preloadPosts("thought"),
       preloadExperiences(),
       preloadProjects(),
+      preloadBookmarks(),
     ]);
   }, []);
 
