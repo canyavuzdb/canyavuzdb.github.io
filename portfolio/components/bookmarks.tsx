@@ -78,19 +78,17 @@ export default function Bookmarks({ embedded = false }: { embedded?: boolean }) 
     <section id="bookmarks" className="w-full max-w-[45rem] leading-8 scroll-mt-28">
       {!embedded && <BackToOverview />}
       {!embedded && <SectionHeading>Bookmarks</SectionHeading>}
-      <div className={`${embedded ? "" : "mt-7"} flex flex-wrap items-center justify-between gap-4 border-b border-white/10 pb-6`}>
-        <p className="text-sm text-white/55">A personal index of useful tools, ideas, and places to learn.</p>
-        <button type="button" onClick={() => setIsSubmitOpen(true)} className="px-1 py-1 text-sm text-white/80 transition-opacity hover:opacity-60">
+      <nav aria-label="Filter bookmarks" className={`${embedded ? "" : "mt-7"} mb-7 flex flex-wrap items-center justify-between gap-4 border-b border-white/[0.07] pb-5`}>
+        <div className="flex flex-wrap gap-x-5 gap-y-2 text-xs text-white/45">
+          {bookmarkCategories.map((item) => (
+            <button key={item} type="button" onClick={() => setCategory(item)} className={`border-b border-transparent pb-0.5 transition-colors hover:text-white ${category === item ? "border-current text-white" : ""}`}>
+              {item}
+            </button>
+          ))}
+        </div>
+        <button type="button" onClick={() => setIsSubmitOpen(true)} className="px-1 py-1 text-sm font-light tracking-[0.01em] text-white/50 transition-colors hover:text-white/80">
           suggest a link
         </button>
-      </div>
-
-      <nav aria-label="Filter bookmarks" className="my-7 flex flex-wrap gap-x-5 gap-y-2 text-xs text-white/45">
-        {bookmarkCategories.map((item) => (
-          <button key={item} type="button" onClick={() => setCategory(item)} className={`border-b border-transparent pb-0.5 transition-colors hover:text-white ${category === item ? "border-current text-white" : ""}`}>
-            {item}
-          </button>
-        ))}
       </nav>
 
       <AnimatePresence mode="wait" initial={false}>
