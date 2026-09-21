@@ -195,7 +195,27 @@ const fallbackProjects: Project[] = [
     { type: "paragraph", text: "The project uses Next.js, React, TypeScript, Tailwind CSS, Supabase, and Vitest. Its quality workflow combines linting, type checking, tests, coverage, and a production build in one check command." },
     { type: "link", label: "View Interview Memory on GitHub", url: "https://github.com/canyavuzdb/interview-memory" },
   ] },
+  { id: 6, slug: "ember", title: "Ember", summary: "A calm macOS menu-bar companion for seeing and controlling local services, Docker containers, and mobile simulators at a glance.", technologies: ["Swift", "SwiftUI", "AppKit", "Swift Concurrency", "Observation", "Docker CLI", "Xcode Simulator", "Android SDK"], technology_groups: [{ label: "Product", items: ["macOS menu-bar companion", "Local development visibility", "Project-focused workflows"] }, { label: "Platform", items: ["SwiftUI", "AppKit", "NSStatusItem", "NSPanel"] }, { label: "Service integrations", items: ["lsof process discovery", "Docker CLI", "HTTP endpoint checks"] }, { label: "Mobile tooling", items: ["Xcode Simulator via simctl", "Android Emulator via adb", "Flutter and React Native app relaunch"] }, { label: "Engineering", items: ["Swift concurrency", "Observation", "Executable workflow checks"] }], links: [], status: "in_progress", scope: "personal", visibility: "open_source", cover_image_path: "/project-ember-cover-v1.png", role: null, organization_name: null, started_on: null, completed_on: null, content_blocks: [
+    { type: "heading", text: "Local development, a glance away" },
+    { type: "paragraph", text: "Ember is a macOS menu-bar app that brings the moving parts of local development into one quiet workspace. It discovers running services, groups Docker ports by container, and shows booted iOS Simulators and Android Emulators without asking developers to leave their current task." },
+    { type: "heading", text: "What it helps manage" },
+    { type: "list", items: ["Discover local services with their project, framework, and listening ports.", "Open web endpoints, restart supported services, stop processes, or hide rows from the menu.", "Inspect Docker containers, published ports, recent logs, and direct restart or stop controls.", "Focus on a chosen project folder, configure local runners, and read service diagnostics.", "See multiple booted iOS Simulators and Android Emulators, relaunch identifiable apps, or shut down an emulator."] },
+    { type: "heading", text: "Built for clear local signals" },
+    { type: "paragraph", text: "Ember separates browser-ready HTTP services from database and queue ports, so a clickable link does not imply every local connection is a web page. Before a managed restart, it verifies the runner and process ownership, waits for the original port to close, then confirms that the replacement process owns the expected port." },
+    { type: "heading", text: "Engineering foundation" },
+    { type: "paragraph", text: "The app is built with SwiftUI, AppKit, Swift concurrency, and Observation. It integrates with lsof for service discovery, the Docker CLI for container metadata and logs, xcrun simctl for iOS Simulators, and adb for Android Emulators. The interface lives in an NSPanel attached to an NSStatusItem, keeping Ember present without becoming another full application window." },
+    { type: "heading", text: "Current scope" },
+    { type: "paragraph", text: "Ember requires macOS Sonoma and Xcode 16 or later to build. Docker, Xcode Simulator, and the Android SDK are optional and activate only their respective integrations. It is released as an MIT-licensed open-source project." },
+    { type: "link", label: "View Ember on GitHub", url: "https://github.com/canyavuzdb/Ember" },
+  ] },
 ];
+
+const sourceControlledProjects = fallbackProjects.filter((project) => project.slug === "ember");
+
+function mergeSourceControlledProjects(projects: Project[]) {
+  const projectSlugs = new Set(projects.map((project) => project.slug));
+  return [...projects, ...sourceControlledProjects.filter((project) => !projectSlugs.has(project.slug))];
+}
 
 const projectCoverPaths: Record<string, string> = {
   lumo: "/project-lumo-cover-v2.png",
@@ -276,7 +296,7 @@ export async function getPostsPage(type: Post["type"], page: number, pageSize = 
 export async function getProjects() {
   if (!supabase) return fallbackProjects;
   const { data, error } = await supabase.from("projects").select("*").eq("is_published", true).order("sort_order");
-  return error || !data ? fallbackProjects : data.map((project) => ({
+  return error || !data ? fallbackProjects : mergeSourceControlledProjects(data.map((project) => ({
     ...project,
     visibility: project.visibility === "open_source" ? "open_source" : "private",
     cover_image_path: resolveProjectCover(project),
@@ -288,7 +308,7 @@ export async function getProjects() {
     organization_name: project.organization_name ?? null,
     started_on: project.started_on ?? null,
     completed_on: project.completed_on ?? null,
-  })) as Project[];
+  })) as Project[]);
 }
 
 export async function getExperiences() {

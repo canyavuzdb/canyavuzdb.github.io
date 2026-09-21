@@ -148,14 +148,14 @@ export default function Projects({ embedded = false }: { embedded?: boolean }) {
                 {visibleProjects.length === 0 ? (
                   <p className="py-16 text-sm text-white/40">No {filterLabels[filter]} projects yet.</p>
                 ) : (
-                  <div className="mt-10 grid auto-rows-min grid-cols-1 items-start gap-6 sm:grid-cols-2">
+                  <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2">
                     {visibleProjects.map((project, index) => (
-                      <button key={project.id} type="button" onClick={() => setSelectedProject(project)} className="group h-fit self-start overflow-hidden border border-white/10 text-left transition-colors hover:border-white/30">
+                      <button key={project.id} type="button" onClick={() => setSelectedProject(project)} className="group flex h-full flex-col overflow-hidden border border-white/10 text-left transition-colors hover:border-white/30">
                         <ProjectHeader project={project} priority={index < 4} />
-                        <div className="p-5 sm:p-6">
+                        <div className="flex flex-1 flex-col p-5 sm:p-6">
                           <h3 className="text-lg font-medium text-white transition-opacity group-hover:opacity-70">{project.title}</h3>
                           <p className="mt-3 line-clamp-3 text-sm leading-6 text-white/55">{project.summary}</p>
-                          <div className="mt-7 flex items-center justify-between gap-4 text-[0.65rem] font-mono uppercase tracking-[0.1em] text-white/35">
+                          <div className="mt-auto flex items-center justify-between gap-4 pt-7 text-[0.65rem] font-mono uppercase tracking-[0.1em] text-white/35">
                             <span>{project.visibility === "open_source" ? "open source" : "private work"}</span>
                             {formatMonth(project.completed_on) && <time dateTime={project.completed_on ?? undefined}>{formatMonth(project.completed_on)}</time>}
                           </div>
